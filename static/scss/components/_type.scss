@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Comfortaa|Droid+Sans|Open+Sans:400,600,700');
+@font-face {
+    font-family: "MyriadProSemibold";
+    src: url("/static/fonts/MyriadPro-Semibold.otf") format("opentype");
+}
+@font-face {
+    font-family: "ProximaRegular";
+    src: url("/static/fonts/ProximaSansRegular Regular.ttf") format("opentype");
+}
+$myriadPro : "MyriadProSemibold";
+$proxiReg : "ProximaRegular";
+$primaryFont : "Droid Sans";
+$perksHeadingSemiBold : "Open Sans - Semibold";
+$navLink : 16px;
+$content : 15px;
+$perksHeadingSize: 17px;
+$perksContent : 13px;

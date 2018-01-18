@@ -1,0 +1,31 @@
+{
+	"index": {
+		"styles": {
+			"debug" : [
+				"static/css/globals/reset.css",
+				"static/css/globals/fontello.css",
+				"static/css/globals/jquery-ui.min.css",
+				"static/css/slick.css",
+				"static/css/slick-theme.css",
+            	"static/css/components/components.css",
+				"static/css/animate.css",
+				"static/css/nav.css",
+            	"static/css/index.css"
+			],
+			"prod": [
+				"static/build/css/index.min.css"
+			]
+		},
+		"scripts": {
+			"debug": [
+				"static/js/vendor/jquery.min.js",
+				"static/js/vendor/jquery-ui.min.js",
+				"static/js/vendor/slick.min.js",
+				"static/js/index.js"
+			],
+			"prod" : [
+				"static/build/js/index.min.js"
+			]
+		}
+	}
+}

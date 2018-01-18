@@ -1,0 +1,45 @@
+@import '../components/_type';
+@import '../components/_colors';
+
+.header {
+    width: 100%;
+    position: relative;
+    .bg-img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    .logo-img {
+        position: absolute;
+        top: 3%;
+        left: 3%;
+        z-index: 2;
+    }
+    h1 {
+        position: absolute;
+        top: 41%;
+        left: 50%;
+        transform: translate(-50%,-41%);
+        text-align: center;
+        width: 100%;
+        font-size: 50px;
+        color: #fff;
+        max-width: 650px;
+        font-family: $myriadPro;
+        font-weight: bold;
+    }
+    h4 {
+        position: absolute;
+        top: 64%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+        width: 100%;
+        font-size: 22px;
+        color: #fff;
+        max-width: 850px;
+        font-family: $proxiReg;
+        font-weight: 400;
+        line-height: 1.3;
+    }
+}

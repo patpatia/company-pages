@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css?family=Comfortaa|Droid+Sans|Open+Sans:400,600,700");
+@font-face {
+  font-family: "MyriadProSemibold";
+  src: url("/static/fonts/MyriadPro-Semibold.otf") format("opentype"); }
+
+@font-face {
+  font-family: "ProximaRegular";
+  src: url("/static/fonts/ProximaSansRegular Regular.ttf") format("opentype"); }
+
+.divider {
+  border: 0;
+  height: 0;
+  border-bottom: 1px solid #e2e2e2; }
+
+.block {
+  padding: 60px 90px 30px;
+  font-size: 0; }
+  .block h2 {
+    color: #000;
+    font-family: "MyriadProSemibold";
+    font-size: 30px;
+    padding: 10px 0 20px 0;
+    position: relative;
+    display: inline-block; }
+    .block h2:after {
+      content: '';
+      display: block;
+      width: 75%;
+      height: 2px;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -1px;
+      background: #da491c; }
+  .block .content {
+    display: inline-block;
+    vertical-align: top; }
+    .block .content p {
+      line-height: 1.6;
+      font-size: 15px;
+      font-family: "Droid Sans"; }
+  .block .image {
+    display: inline-block;
+    vertical-align: top; }
+    .block .image img {
+      width: 100%;
+      height: auto;
+      display: block; }
+
+.first h2 {
+  text-transform: uppercase; }
+  .first h2:after {
+    width: 30%;
+    height: 2px;
+    left: 10%;
+    right: 0; }
+
+.first .content {
+  width: calc(100% - 378px);
+  padding-top: 30px;
+  padding-right: 75px; }
+
+.second h2:after {
+  width: 30%;
+  height: 2px;
+  left: 50%;
+  right: 0;
+  transform: translate(-50%); }
+
+.second .heading {
+  text-align: center; }
+
+.second .row {
+  margin-top: 50px; }
+
+.second .column {
+  display: inline-block;
+  vertical-align: top;
+  padding: 0 10px; }
+  .second .column.left {
+    width: 40%; }
+  .second .column.right {
+    width: 60%; }
+  .second .column img {
+    width: 100%;
+    height: auto; }
+
+.second .column.right .left {
+  display: inline-block;
+  width: 50%; }
+
+.second .column.right .right {
+  display: inline-block;
+  width: 50%; }
+
+.third {
+  background-color: #f8f8f8; }
+  .third h2:after {
+    width: 30%;
+    height: 2px;
+    right: 20%;
+    left: unset; }
+  .third .content-wrapper {
+    padding: 50px 0; }
+    .third .content-wrapper:not(:last-child) {
+      border-bottom: 1px solid #e2e2e2; }
+    .third .content-wrapper:nth-child(3) .video {
+      text-align: right; }
+  .third .video {
+    display: inline-block;
+    width: 400px; }
+  .third .content {
+    width: calc(100% - 400px); }
+    .third .content .heading {
+      color: #000;
+      font-family: "MyriadProSemibold";
+      font-size: 22px;
+      padding: 20px 0; }
+
+.fourth {
+  padding-top: 90px;
+  position: relative; }
+  .fourth .image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 25%;
+    z-index: -1; }
+    .fourth .image img {
+      max-width: 100%;
+      width: auto; }
+  .fourth h2:after {
+    width: 30%;
+    height: 2px;
+    left: 25%; }
+  .fourth .content-wrapper {
+    display: inline-block;
+    width: 50%;
+    vertical-align: top; }
+    .fourth .content-wrapper .heading {
+      margin-bottom: 40px; }
+    .fourth .content-wrapper .text {
+      font-size: 15px;
+      font-family: "ProximaRegular";
+      color: #333;
+      line-height: 1.6;
+      padding-right: 50px;
+      word-break: break-word; }
+  .fourth .perks-slider {
+    display: inline-block;
+    width: 50%;
+    vertical-align: top; }
+  .fourth .col_container:first-child {
+    padding-bottom: 50px; }
+  .fourth .col {
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
+    padding-right: 50px; }
+    .fourth .col .heading {
+      font-family: "Open Sans - Semibold";
+      font-size: 17px;
+      padding: 15px 0;
+      color: #333; }
+    .fourth .col .text {
+      font-family: "ProximaRegular";
+      font-size: 13px;
+      line-height: 1.4;
+      color: #999; }
+
+/*
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/

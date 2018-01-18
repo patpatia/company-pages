@@ -1,0 +1,242 @@
+@import 'components/_type';
+@import 'components/_colors';
+
+.divider {
+    border: 0;
+    height: 0;
+    border-bottom: 1px solid $borderColor;
+}
+
+.block {
+    padding: 60px 90px 30px;
+    font-size: 0;
+    h2 {
+        color: #000;
+        font-family: $myriadPro;
+        font-size: 30px;
+        padding: 10px 0 20px 0;
+        position: relative;
+        display: inline-block;
+        &:after {
+	    	content:'';
+	    	display:block;
+	    	width:75%;
+	    	height:2px;
+	    	position:absolute;
+	    	left:0;
+	    	right:0;
+	    	bottom:-1px;
+	    	background: $divider;
+	    }
+    }
+    .content {
+        display: inline-block;
+        vertical-align: top;
+        p {
+            line-height: 1.6;
+            font-size: $content;
+            font-family: $primaryFont;
+        }
+    }
+    .image {
+        display: inline-block;
+        vertical-align: top;
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+    }
+}
+
+.first {
+    h2 {
+        text-transform: uppercase;
+        &:after {
+	    	width:30%;
+	    	height:2px;
+	    	left:10%;
+	    	right:0;
+	    }
+    }
+    .content {
+        width: calc(100% - 378px);
+        padding-top: 30px;
+        padding-right: 75px;
+    }
+}
+.second {
+    h2 {
+        &:after {
+	    	width:30%;
+	    	height:2px;
+	    	left:50%;
+	    	right:0;
+            transform: translate(-50%);
+	    }
+    }
+    .heading {
+        text-align: center;
+    }
+    .row {
+        margin-top: 50px;
+    }
+
+    .column {
+        display: inline-block;
+        vertical-align: top;
+        padding: 0 10px;
+        &.left {
+            width: 40%;
+        }
+        &.right {
+            width: 60%;
+        }
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+    .column.right {
+        .left {
+            display: inline-block;
+            width: 50%;
+        }
+        .right {
+            display: inline-block;
+            width: 50%;
+        }
+    }
+}
+
+.third {
+    h2 {
+        &:after {
+	    	width:30%;
+	    	height:2px;
+	    	right:20%;
+            left: unset;
+	    }
+    }
+    background-color: $bgColor;
+    .content-wrapper {
+        padding: 50px 0;
+        &:not(:last-child) {
+            border-bottom: 1px solid $borderColor;
+        }
+        &:nth-child(3) {
+            .video {
+                text-align: right;
+            }
+        }
+    }
+        .video {
+            display: inline-block;
+            width: 400px;
+        }
+        .content {
+            width: calc(100% - 400px);
+            .heading {
+                color: #000;
+                font-family: $myriadPro;
+                font-size: 22px;
+                padding: 20px 0;
+            }
+            .text {
+
+            }
+        }
+}
+
+.fourth {
+    padding-top: 90px;
+    position: relative;
+    .image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 25%;
+        z-index: -1;
+        img {
+            max-width: 100%;
+            width: auto;
+        }
+    }
+    h2 {
+        &:after {
+	    	width:30%;
+	    	height:2px;
+            left: 25%;
+	    }
+    }
+    .content-wrapper {
+        display: inline-block;
+        width: 50%;
+        vertical-align: top;
+        .heading {
+            margin-bottom: 40px;
+        }
+        .text {
+            font-size: $content;
+            font-family: $proxiReg;
+            color: $secondaryText;
+            line-height: 1.6;
+            padding-right: 50px;
+            word-break: break-word;
+        }
+    }
+    .perks-slider {
+        display: inline-block;
+        width: 50%;
+        vertical-align: top;
+
+    }
+        .col_container:first-child {
+            padding-bottom: 50px;
+        }
+            .col {
+                display: inline-block;
+                width: 50%;
+                vertical-align: top;
+                padding-right: 50px;
+                .icons {
+
+                }
+                .heading {
+                    font-family: $perksHeadingSemiBold;
+                    font-size: $perksHeadingSize;
+                    padding: 15px 0;
+                    color: $secondaryText;
+                }
+                .text {
+                    font-family: $proxiReg;
+                    font-size: $perksContent;
+                    line-height: 1.4;
+                    color: $perksTextColor;
+                }
+            }
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  //CSS
+
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+  //CSS
+
+}
+
+/*
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+  //CSS
+
+}

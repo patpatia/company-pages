@@ -1,0 +1,100 @@
+@import 'components/_type';
+@import 'components/_colors';
+$noOfNavTabs : 4;
+
+
+
+@function getNavTabsWidth($args) {
+    @return (100%/$args);
+}
+
+.nav-tabs {
+    width: 100%;
+    height: auto;
+}
+
+.ui-widget.ui-widget-content {
+    border: 0;
+    padding: 0;
+}
+
+.ui-corner-all, .ui-corner-top, .ui-corner-right, .ui-corner-tr {
+    border-radius: 0;
+}
+
+.ui-widget-content {
+    background-color: #fff;
+}
+
+.ui-tabs .ui-tabs-nav .ui-tabs-anchor {
+    position: relative;
+    &:last-child {
+        float: none;
+    }
+}
+
+.ui-widget-header {
+    border: 0;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+    background: #fff;
+    color: $primaryText;
+    font-family: $primaryFont;
+    font-size: $navLink;
+    padding: 0 125px;
+}
+
+.ui-tabs .ui-tabs-nav li {
+    margin: 0;
+    border: 0;
+}
+
+.ui-tabs .ui-tabs-nav li.ui-tabs-active {
+    margin: 0;
+    padding: 0;
+}
+
+.ui-state-default {
+        background: #fff !important;
+    	border:0;
+    	border-radius:0;
+    	margin:0;
+    	border-left:0;
+        width: getNavTabsWidth($noOfNavTabs);
+        outline: 0;
+	    a {
+	    	padding:20px 0;
+	    	display:inline-block;
+	    	text-align: left;
+            color: $navInactive !important;
+		    &:focus {
+		    	outline:0;
+		    }
+	    }
+        &:last-child {
+            text-align : center;
+        }
+	}
+
+.ui-state-active {
+    background: #fff !important;
+    a {
+    	color: $navActive !important;
+        font-weight: 600;
+    	&:after {
+	    	content:'';
+	    	display:block;
+	    	width:75%;
+	    	height:2px;
+	    	position:absolute;
+	    	left:0;
+	    	right:0;
+	    	bottom:-1px;
+	    	background: $divider;
+	    }
+    }
+
+}
+
+.ui-tabs .ui-tabs-panel {
+    padding: 0;
+}
