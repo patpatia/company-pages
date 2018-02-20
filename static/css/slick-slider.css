@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css?family=Comfortaa|Droid+Sans|Open+Sans:400,600,700");
+@font-face {
+  font-family: "MyriadProSemibold";
+  src: url("/static/fonts/MyriadPro-Semibold.otf") format("opentype"); }
+
+@font-face {
+  font-family: "ProximaRegular";
+  src: url("/static/fonts/ProximaSansRegular Regular.ttf") format("opentype"); }
+
+.slick-slide {
+  outline: none; }
+
+.slick-dots li.slick-active button:before, .slick-dots li button:focus {
+  color: #da491c; }
+
+.slick-dots li button:before {
+  font-size: 13px; }
+
+.slick-dots li:not(.slick-active) button:hover {
+  color: inherit;
+  opacity: 0.3; }
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .slick-dots li button:before {
+    font-size: 11px; } }
+
+.sixth .slick-dots {
+  text-align: center; }
+
+.sixth .slick-prev {
+  background: url(/static/images/left-arrow.png);
+  background-repeat: no-repeat; }
+
+.sixth .slick-next {
+  background: url(/static/images/right-arrow.png);
+  background-repeat: no-repeat; }
+
+.sixth .slick-prev, .sixth .slick-next {
+  position: absolute;
+  top: calc(125px + (100% - 175px)/2);
+  display: block;
+  width: 27px;
+  height: 53px; }
+  .sixth .slick-prev:before, .sixth .slick-next:before {
+    content: ''; }

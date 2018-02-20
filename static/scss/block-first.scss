@@ -1,0 +1,63 @@
+@import 'components/_type';
+@import 'components/_colors';
+
+.first {
+    padding-top: 45px;
+    .content_mobile {
+        display: none;
+    }
+    h2 {
+        text-transform: uppercase;
+        &:after {
+	    	width:30%;
+	    	height:2px;
+	    	left:10%;
+	    	right:0;
+	    }
+    }
+    .primary_text {
+        width: 70%;
+        padding-right: 75px;
+    }
+    .image {
+        width: 30%;
+    }
+}
+
+.more {
+    height: auto !important;
+    overflow: auto !important;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+
+    .first {
+        .content_mobile {
+            display: block;
+            position: relative;
+        }
+        .content {
+            display: none;
+        }
+        .primary_text {
+            width: 100%;
+            padding: 0;
+            height: 200px;
+            overflow: hidden;
+            position: relative;
+        }
+        .image {
+            width: 100%;
+            margin-bottom: 50px;
+
+        }
+        .read_more {
+            position: absolute;
+            bottom: -25px;
+            left: 50%;
+            transform: translate(-50%);
+            font-size: 16px;
+            color: $orange;
+            cursor: pointer;
+        }
+    }
+}

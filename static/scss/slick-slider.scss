@@ -1,0 +1,50 @@
+@import 'components/_type';
+@import 'components/_colors';
+
+.slick-slide {
+    outline: none;
+}
+
+.slick-dots li.slick-active button:before, .slick-dots li button:focus {
+    color: $orange;
+}
+
+.slick-dots li button:before {
+    font-size: $slickDotsSize;
+}
+
+
+.slick-dots li:not(.slick-active) button:hover {
+    color: inherit;
+    opacity: 0.3;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .slick-dots li button:before {
+        font-size: $slickDotsSizeMobile;
+    }
+}
+
+.sixth {
+    .slick-dots {
+        text-align: center;
+    }
+    .slick-prev {
+        background: url(/static/images/left-arrow.png);
+        background-repeat: no-repeat;
+    }
+    .slick-next {
+        background: url(/static/images/right-arrow.png);
+        background-repeat: no-repeat;
+    }
+    .slick-prev, .slick-next {
+        position: absolute;
+        top: calc(125px + (100% - 175px)/2);
+        display: block;
+        width: 27px;
+        height: 53px;
+        &:before {
+            content: ''
+        }
+    }
+}

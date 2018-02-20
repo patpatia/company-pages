@@ -1,0 +1,160 @@
+@import 'components/_type';
+@import 'components/_colors';
+
+.seventh {
+    background-color: $bgColor;
+    h2 {
+        &:after {
+	    	width:30%;
+	    	height:2px;
+            left:50%;
+	    	right:0;
+            transform: translate(-50%);
+	    }
+    }
+    .heading {
+        text-align: center;
+    }
+    .sub_content {
+        text-align: center;
+        font-size: 18px;
+        margin: 30px 0;
+        font-family: $proxiReg;
+        line-height: 1.4;
+        margin: 40px auto;
+        max-width: 75%;
+    }
+    .content {
+        width: 100%;
+        .row {
+            font-size: 0;
+            width: 80%;
+            margin: 0 auto;
+            &:first-child {
+                margin-bottom: 20px;
+            }
+        }
+        .col {
+            display: inline-block;
+            width: calc(50% - 10px);
+            padding: 30px;
+            border: 1px solid rgba(224, 224, 224, 0.5);
+            background-color: #fff;
+            cursor: pointer;
+            position: relative;
+            &:hover {
+                border: 1px solid $orange;
+                .primary_text {
+                    color: $orange;
+                }
+            }
+            &:first-child {
+                margin-right: 20px;
+            }
+            a {
+                position: absolute;
+                top: 0;
+                right: 0;
+                left: 0;
+                bottom: 0;
+            }
+        }
+        .image {
+            max-width: 100px;
+            max-height: 100px;
+            width: 76px;
+            height: 76px;
+            border-radius: 50%;
+            img {
+                border-radius: 50%;
+                height: 100%;
+            }
+        }
+        .primary_text {
+            font-family: $myriadPro;
+            font-size: 17px;
+            color: $primaryTextColor;
+            margin: 20px 0;
+            line-height: 1.4;
+        }
+        .secondary_text {
+            font-family: $proxiReg;
+            font-size: 13px;
+            color: $perksTextColor;
+            p {
+                min-height: 20px;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 900px) {
+    .seventh {
+        .content {
+            .row {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .seventh {
+        .content {
+
+
+            .row {
+                &:first-child {
+                    margin-bottom: 0;
+                }
+            }
+            .col {
+                margin-bottom: 10px;
+
+                &:first-child {
+                    margin-right: 0;
+                }
+                width: 100%;
+
+            }
+        }
+    }
+}
+
+@media (min-width: 361px) and (max-width: 480px) {
+
+    .seventh {
+        .content {
+            .primary_text {
+                font-size: 15px;
+            }
+            .secondary_text {
+                font-size: 13px;
+            }
+            .image {
+                width: 66px;
+                height: 66px;
+            }
+        }
+    }
+
+}
+
+@media (min-width: 320px) and (max-width: 360px) {
+
+    .seventh {
+        .content {
+            .primary_text {
+                font-size: 13px;
+            }
+            .secondary_text {
+                font-size: 11px;
+            }
+            .image {
+                width: 56px;
+                height: 56px;
+            }
+        }
+    }
+
+}

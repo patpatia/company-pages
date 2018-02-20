@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css?family=Comfortaa|Droid+Sans|Open+Sans:400,600,700");
+@font-face {
+  font-family: "MyriadProSemibold";
+  src: url("/static/fonts/MyriadPro-Semibold.otf") format("opentype"); }
+
+@font-face {
+  font-family: "ProximaRegular";
+  src: url("/static/fonts/ProximaSansRegular Regular.ttf") format("opentype"); }
+
+.first {
+  padding-top: 45px; }
+  .first .content_mobile {
+    display: none; }
+  .first h2 {
+    text-transform: uppercase; }
+    .first h2:after {
+      width: 30%;
+      height: 2px;
+      left: 10%;
+      right: 0; }
+  .first .primary_text {
+    width: 70%;
+    padding-right: 75px; }
+  .first .image {
+    width: 30%; }
+
+.more {
+  height: auto !important;
+  overflow: auto !important; }
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .first .content_mobile {
+    display: block;
+    position: relative; }
+  .first .content {
+    display: none; }
+  .first .primary_text {
+    width: 100%;
+    padding: 0;
+    height: 200px;
+    overflow: hidden;
+    position: relative; }
+  .first .image {
+    width: 100%;
+    margin-bottom: 50px; }
+  .first .read_more {
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 16px;
+    color: #da491c;
+    cursor: pointer; } }

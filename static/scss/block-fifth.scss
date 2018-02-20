@@ -1,0 +1,139 @@
+@import 'components/_type';
+@import 'components/_colors';
+
+
+.fifth {
+    padding-left: 0;
+    padding-right: 0;
+    h2 {
+        &:after {
+	    	width:30%;
+	    	height:2px;
+	    	right:20%;
+            left: unset;
+	    }
+    }
+    .heading {
+        padding: 0 90px;
+    }
+    .image {
+        position: relative;
+        margin-top: 60px;
+        width: 100%;
+    }
+    .sub_heading {
+        padding: 0;
+        span {
+            color: $orange;
+        }
+    }
+    .content_wrapper {
+        position: absolute;
+        left: 90px;
+        top: 15%;
+        bottom: 15%;
+        right: calc(100% - 830px);
+        padding: 60px;
+        background-color: #fff;
+        opacity: 0.9;
+        .primary_text {
+            padding: 20px 0;
+        }
+        .button {
+            display: inline-block;
+            padding: 0 20px;
+            height: 45px;
+            line-height: 45px;
+            border-radius: 20px;
+            font-size: $buttonSize;
+            text-align: center;
+            cursor: pointer;
+            border: 1px solid #333;
+        }
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 900px) {
+    .fifth {
+        padding-left: 0;
+        padding-right: 0;
+        .content_wrapper {
+            left: 0;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            padding: 60px 70px;
+            opacity: 0.9;
+
+        }
+        .heading {
+            padding-left: 70px;
+            padding-right: 70px;
+        }
+        .sub_heading {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+
+    .fifth {
+
+        .image {
+            margin-top: 50px;
+            img {
+                display: none;
+            }
+        }
+        .content_wrapper {
+            position: static;
+
+            opacity: 1;
+            background-color: $bgColor;
+            .button {
+                padding: 0 15px;
+                height: 35px;
+                line-height: 35px;
+                font-size: 12px;
+            }
+        }
+    }
+
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+    .fifth {
+        .heading {
+            padding: 0 50px;
+        }
+        .content_wrapper {
+            padding: 50px;
+        }
+    }
+}
+
+@media (min-width: 361px) and (max-width: 480px) {
+    .fifth {
+        .heading {
+            padding: 0 30px;
+        }
+        .content_wrapper {
+            padding: 30px;
+        }
+    }
+}
+
+@media (min-width: 320px) and (max-width: 360px) {
+    .fifth {
+        .heading {
+            padding: 0 10px;
+        }
+        .content_wrapper {
+            padding: 20px 10px;
+        }
+    }
+}

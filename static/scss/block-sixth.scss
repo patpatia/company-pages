@@ -1,0 +1,142 @@
+@import 'components/_type';
+@import 'components/_colors';
+
+
+.sixth {
+
+    .heading {
+        text-align: center;
+    }
+    h2 {
+        &:after {
+	    	width:30%;
+	    	height:2px;
+            left:50%;
+	    	right:0;
+            transform: translate(-50%);
+	    }
+    }
+    .slides {
+
+        position: relative;
+        margin: 0 40px;
+
+        .quotes-img {
+            position: absolute;
+            top: 55px;
+            left: 30px;
+            max-width: 94px;
+        }
+        .profile-img {
+            position: absolute;
+            top: 65px;
+            left: 50%;
+            transform: translate(-50%);
+            width: 111px;
+            height: 113px;
+        }
+        .content_wrapper {
+            box-shadow: 0 0 17px rgba(0, 0, 0, 0.08);
+            padding: 100px 60px 30px 60px;
+            margin: 125px 0 50px;
+        }
+        .sub_heading {
+            text-align: center;
+        }
+    }
+}
+
+@media (min-width: 361px) and (max-width: 768px) {
+    .sixth {
+        .slides {
+            margin: 0px 10px;
+            padding: 0 10px;
+        }
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+    .sixth {
+        .slides {
+
+            .quotes-img {
+                width: 74px;
+                top: 71px;
+            }
+            .profile-img {
+                top: 75px;
+                width: 100px;
+                height: 102px;
+            }
+            .content_wrapper {
+
+                padding-top: 85px;
+
+            }
+        }
+    }
+
+}
+
+@media (min-width: 361px) and (max-width: 480px) {
+
+    .sixth {
+        .slides {
+
+            .content_wrapper {
+                padding-left: 20px;
+                padding-right: 20px;
+                padding-top: 65px;
+            }
+
+            .quotes-img {
+                width: 54px;
+                top: 86px;
+                left: 20px;
+            }
+            .profile-img {
+                top: 80px;
+                width: 85px;
+                height: 87px;
+            }
+        }
+    }
+
+}
+
+@media (min-width: 320px) and (max-width: 360px) {
+
+    .sixth {
+        .slides {
+
+            .content_wrapper {
+                padding-left: 5px;
+                padding-right: 5px;
+                padding-top: 45px;
+            }
+
+            .quotes-img {
+                width: 34px;
+                top: 100px;
+                left: 10px;
+            }
+            .profile-img {
+                top: 90px;
+                width: 60px;
+                height: 62px;
+            }
+            .primary_text {
+                font-size: 12px;
+            }
+        }
+
+        .slick-prev {
+            left: -5px;
+        }
+        .slick-next {
+            right: -5px;
+        }
+    }
+
+}

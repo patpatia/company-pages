@@ -1,0 +1,105 @@
+@import 'components/_type';
+@import 'components/_colors';
+
+.fourth {
+    .slider_fourth_mobile {
+        display: none;
+    }
+    position: relative;
+    .image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 25%;
+        height: 25%;
+        z-index: -1;
+        img {
+            max-width: 100%;
+            width: auto;
+        }
+    }
+    h2 {
+        &:after {
+	    	width:30%;
+	    	height:2px;
+            left: 25%;
+	    }
+    }
+    .content_wrapper {
+        .primary_text {
+            margin-top: 40px;
+            padding-right: 75px;
+        }
+    }
+        .col_container:first-child {
+            padding-bottom: 50px;
+        }
+
+        .col_container {
+            .col {
+                padding-right: 50px;
+            }
+        }
+            .col {
+
+                .heading {
+                    font-family: $perksHeadingSemiBold;
+                    font-size: $perksHeadingSize;
+                    padding: 15px 0;
+                    color: $secondaryText;
+                }
+                .text {
+                    font-family: $proxiReg;
+                    font-size: $perksContent;
+                    line-height: 1.4;
+                    color: $perksTextColor;
+                }
+            }
+
+            .slick-dots {
+                text-align: left;
+                left: -10px;
+                bottom: -30px;
+            }
+            .slick-arrow {
+                display: none !important;
+            }
+}
+
+
+@media (min-width: 320px) and (max-width: 767px) {
+
+    .fourth {
+
+        .col_container {
+            padding-bottom: 0 !important;
+        }
+
+        .content_wrapper {
+            width: 100%;
+            .primary_text {
+                padding: 0;
+                margin: 40px 0;
+            }
+        }
+        .slider_fourth_mobile {
+            display: block;
+        }
+        .slider_fourth {
+            display: none;
+        }
+
+        .slick-dots {
+            text-align: center;
+        }
+
+        .col_container {
+            .col {
+                padding-right: 15px;
+            }
+        }
+    }
+
+
+
+}

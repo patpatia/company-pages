@@ -2,8 +2,6 @@
 @import 'components/_colors';
 $noOfNavTabs : 4;
 
-
-
 @function getNavTabsWidth($args) {
     @return (100%/$args);
 }
@@ -35,9 +33,8 @@ $noOfNavTabs : 4;
 
 .ui-widget-header {
     border: 0;
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
     background: #fff;
-    color: $primaryText;
+    color: $primaryTextColor;
     font-family: $primaryFont;
     font-size: $navLink;
     padding: 0 125px;
@@ -88,8 +85,8 @@ $noOfNavTabs : 4;
 	    	position:absolute;
 	    	left:0;
 	    	right:0;
-	    	bottom:-1px;
-	    	background: $divider;
+	    	bottom:0px;
+	    	background: $orange;
 	    }
     }
 
@@ -97,4 +94,50 @@ $noOfNavTabs : 4;
 
 .ui-tabs .ui-tabs-panel {
     padding: 0;
+}
+
+.nav_container {
+    overflow-x: auto;
+    overflow-y: hidden;
+    width: 100%;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+}
+
+@media (min-width: 320px) and (max-width: 900px) {
+    .ui-widget-header {
+        padding: 0 20px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+    .ui-widget-header {
+        width: 700px;
+        font-size: 15px;
+    }
+
+
+}
+
+@media (min-width: 361px) and (max-width: 480px) {
+
+    .ui-widget-header {
+        width: 650px;
+        font-size: 14px;
+    }
+
+
+
+}
+
+@media (min-width: 320px) and (max-width: 360px) {
+
+    .ui-widget-header {
+
+        width: 600px;
+        font-size: 13px;
+    }
+
+    
+
 }

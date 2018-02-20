@@ -1,7 +1,46 @@
 .hidden {
-    display: none;
+    display: none ;
+}
+
+.invisible {
+    opacity: 0;
 }
 
 * {
     box-sizing: border-box;
 }
+
+.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 99;
+}
+
+.overflow_hidden {
+    overflow: hidden;
+}
+
+html,body {
+
+    height: 100%;
+    min-height: 100%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+// .left {
+//     float: left;
+// }
+//
+// .right {
+//     float: right;
+// }
+//
+// .clearfix {
+//     clear: both;
+// }

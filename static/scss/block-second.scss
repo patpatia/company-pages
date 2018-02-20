@@ -1,0 +1,63 @@
+@import 'components/_type';
+@import 'components/_colors';
+
+
+
+.second {
+    .content_mobile {
+        display: none;
+    }
+    
+    h2 {
+        &:after {
+	    	width:30%;
+	    	height:2px;
+	    	left:50%;
+	    	right:0;
+            transform: translate(-50%);
+	    }
+    }
+    .heading {
+        text-align: center;
+    }
+
+    .content {
+        height: 650px;
+    }
+
+    .pad_left {
+        padding-left: 5px;
+    }
+
+    .pad_right {
+        padding-right: 5px;
+    }
+
+    .pad_bottom {
+        padding-bottom: 5px;
+    }
+
+    .pad_top {
+        padding-top: 5px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 900px) {
+    .second {
+        .content {
+            height: 500px;
+        }
+    }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+
+    .second {
+        .content_mobile {
+            display: block;
+        }
+        .content {
+            display: none;
+        }
+    }
+}

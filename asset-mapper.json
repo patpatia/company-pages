@@ -8,9 +8,18 @@
 				"static/css/slick.css",
 				"static/css/slick-theme.css",
             	"static/css/components/components.css",
+				"static/css/slick-slider.css",
 				"static/css/animate.css",
 				"static/css/nav.css",
-            	"static/css/index.css"
+				"static/css/modal.css",
+            	"static/css/index.css",
+				"static/css/block-first.css",
+				"static/css/block-second.css",
+				"static/css/block-third.css",
+				"static/css/block-fourth.css",
+				"static/css/block-fifth.css",
+				"static/css/block-sixth.css",
+				"static/css/block-seventh.css"
 			],
 			"prod": [
 				"static/build/css/index.min.css"
@@ -21,6 +30,8 @@
 				"static/js/vendor/jquery.min.js",
 				"static/js/vendor/jquery-ui.min.js",
 				"static/js/vendor/slick.min.js",
+				"static/js/vendor/fontawesome-all.js",
+				"static/js/modal.js",
 				"static/js/index.js"
 			],
 			"prod" : [
