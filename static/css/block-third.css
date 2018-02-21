@@ -18,9 +18,10 @@
     left: unset; }
   .third .content {
     padding: 50px 0;
-    margin-top: 0; }
-    .third .content:not(:nth-child(4)) {
-      border-bottom: 1px solid #e2e2e2; }
+    margin-top: 0;
+    border-bottom: 1px solid #e2e2e2; }
+    .third .content:nth-child(3) {
+      border-bottom: 0; }
   .third .content_wrapper {
     width: 60%; }
     .third .content_wrapper:nth-child(3) .image {

@@ -143,3 +143,6 @@
   /* Opera 12+ */
   animation: fadeIn 2s;
   /* IE 10+, Fx 29+ */ }
+
+.ui-tabs-nav {
+  display: none; }
