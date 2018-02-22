@@ -32,6 +32,9 @@
     transform: translate(-50%);
     width: 111px;
     height: 113px; }
+    .sixth .slides .profile-img img {
+      border-radius: 50%;
+      border: 1px solid #e8e8e8; }
   .sixth .slides .content_wrapper {
     box-shadow: 0 0 17px rgba(0, 0, 0, 0.08);
     padding: 100px 60px 30px 60px;
