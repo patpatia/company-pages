@@ -34,8 +34,6 @@ $(document).ready(function(){
     });
 
     $('.center_slider').slick({
-        centerMode: true,
-        centerPadding: '70px',
         slidesToShow: 1,
         dots:true,
         arrows: true,

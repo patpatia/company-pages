@@ -2,6 +2,7 @@
 @import 'components/_colors';
 
 .fourth {
+    //font-family: "ProximaRegular";
     .slider_fourth_mobile {
         display: none;
     }
@@ -43,13 +44,13 @@
             .col {
 
                 .heading {
-                    font-family: $perksHeadingSemiBold;
+                    font-family: "ProximaRegular";
                     font-size: $perksHeadingSize;
                     padding: 15px 0;
                     color: $secondaryText;
                 }
                 .text {
-                    font-family: $proxiReg;
+                    font-family: "ProximaRegular";
                     font-size: $perksContent;
                     line-height: 1.4;
                     color: $perksTextColor;

@@ -28,14 +28,18 @@
 .sixth {
     .slick-dots {
         text-align: center;
+        bottom: 25px;
     }
     .slick-prev {
         background: url(/static/images/left-arrow.png);
         background-repeat: no-repeat;
+        left: 50px;
+        z-index: 1;
     }
     .slick-next {
         background: url(/static/images/right-arrow.png);
         background-repeat: no-repeat;
+        right: 50px;
     }
     .slick-prev, .slick-next {
         position: absolute;
