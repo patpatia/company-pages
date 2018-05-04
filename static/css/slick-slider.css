@@ -16,6 +16,10 @@
 .slick-dots li button:before {
   font-size: 13px; }
 
+.slick-slide img {
+  display: block;
+  width: 18%; }
+
 .slick-dots li:not(.slick-active) button:hover {
   color: inherit;
   opacity: 0.3; }

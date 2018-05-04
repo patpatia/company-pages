@@ -13,6 +13,10 @@
     font-size: $slickDotsSize;
 }
 
+.slick-slide img {
+    display: block;
+    width: 18%;
+}
 
 .slick-dots li:not(.slick-active) button:hover {
     color: inherit;
