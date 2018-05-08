@@ -19,7 +19,8 @@
 				"static/css/block-fourth.css",
 				"static/css/block-fifth.css",
 				"static/css/block-sixth.css",
-				"static/css/block-seventh.css"
+				"static/css/block-seventh.css",
+				"static/css/block-eigth.css"
 			],
 			"prod": [
 				"static/build/css/index.min.css"

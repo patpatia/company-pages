@@ -1,0 +1,57 @@
+@import 'components/_type';
+@import 'components/_colors';
+
+.eigth {
+    padding-top: 45px;
+    background-color: $bgColor;
+    .content_mobile {
+        display: none;
+    }
+    .heading {
+        margin-left: calc(30% + 75px);
+    }
+    h2 {
+        text-transform: uppercase;
+        &:after {
+	    	width:30%;
+	    	height:2px;
+	    	left:10%;
+	    	right:0;
+	    }
+    }
+    .primary_text {
+        width: 70%;
+        padding-left: 75px;
+    }
+    .image {
+        width: 30%;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+
+    .eigth {
+        .heading {
+            margin-left: 0;
+        }
+        .content_mobile {
+            display: block;
+            position: relative;
+        }
+        .content {
+            display: none;
+        }
+        .primary_text {
+            width: 100%;
+            padding: 0;
+            height: 200px;
+            overflow: hidden;
+            position: relative;
+        }
+        .image {
+            width: 100%;
+            margin-bottom: 50px;
+
+        }
+    }
+}

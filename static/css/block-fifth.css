@@ -9,7 +9,8 @@
 
 .fifth {
   padding-left: 0;
-  padding-right: 0; }
+  padding-right: 0;
+  padding-bottom: 0; }
   .fifth h2:after {
     width: 30%;
     height: 2px;
@@ -28,12 +29,22 @@
   .fifth .content_wrapper {
     position: absolute;
     left: 90px;
-    top: 15%;
-    bottom: 15%;
+    top: 20%;
+    bottom: 20%;
     right: calc(100% - 830px);
     padding: 60px;
     background-color: #fff;
     opacity: 0.9; }
+    .fifth .content_wrapper ul {
+      line-height: 2;
+      font-size: 17px;
+      color: #2b2b2b;
+      list-style: initial; }
+      .fifth .content_wrapper ul li {
+        padding: 10px 0; }
+      .fifth .content_wrapper ul .primary_content {
+        font-weight: 700;
+        font-size: 19px; }
     .fifth .content_wrapper .primary_text {
       padding: 20px 0; }
     .fifth .content_wrapper .button {
@@ -46,6 +57,11 @@
       text-align: center;
       cursor: pointer;
       border: 1px solid #333; }
+
+@media (min-width: 901px) and (max-width: 1024px) {
+  .fifth .content_wrapper {
+    top: 15%;
+    bottom: 15%; } }
 
 @media (min-width: 768px) and (max-width: 900px) {
   .fifth {
@@ -74,6 +90,11 @@
     position: static;
     opacity: 1;
     background-color: #f8f8f8; }
+    .fifth .content_wrapper ul {
+      line-height: 1.7;
+      font-size: 15px;
+      color: #2b2b2b;
+      list-style: initial; }
     .fifth .content_wrapper .button {
       padding: 0 15px;
       height: 35px;
