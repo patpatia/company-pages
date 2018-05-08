@@ -25,6 +25,8 @@
   font-style: normal;
   font-weight: normal;
   speak: none;
+  color: #da491c;
+  font-size:30px;
  
   display: inline-block;
   text-decoration: inherit;
@@ -74,3 +76,9 @@
 .icon-filter:before { content: '\f0b0'; } /* '' */
 .icon-calendar-empty:before { content: '\f133'; } /* '' */
 .icon-dot-3:before { content: '\e80f'; } /* '' */
+
+.icon-pregancy_care::before{content: '\e804'}
+.icon-prevention::before{content: '\e805'}
+.icon-wns::before{content: '\e806'}
+.icon-maternity_benefits::before{content:'\e807'}
+.icon-maternity_policy::before{content: '\e808'}
