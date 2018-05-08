@@ -44,6 +44,17 @@
     font-family: "MyriadProSemibold";
     font-weight: bold;
     padding: 0 10px; }
+    .header h1:after {
+      content: '';
+      display: block;
+      width: 25%;
+      height: 3px;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -15px;
+      margin: 0 auto;
+      background: #CF7E1F; }
   .header h4 {
     position: absolute;
     top: 60%;
