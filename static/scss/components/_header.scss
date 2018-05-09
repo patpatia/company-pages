@@ -126,20 +126,23 @@
             display: none;
         }
         h1 {
-            font-size: 27px;
+            font-size: 24px;
             max-width: 500px;
-            top: 30%;
+            top: 35%;
+            &:after {
+                height: 2px;
+                bottom: -12px;
+    	    }
         }
         h4 {
-            font-size: 18px;
+            font-size: 15px;
             max-width: 400px;
-
-            top: 58%;
+            top: 70%;
         }
         .logo-img {
             top: 15px;
             left: 20px;
-            width: 125px;
+            width: 110px;
         }
 
     }
@@ -158,12 +161,16 @@
         h1 {
             font-size: 23px;
             max-width: 360px;
-            top: 32%;
+            top: 37%;
+            &:after {
+                height: 2px;
+                bottom: -12px;
+    	    }
         }
         h4 {
             font-size: 14px;
             max-width: 320px;
-            top: 62%;
+            top: 72%;
         }
         .logo-img {
             width: 90px;

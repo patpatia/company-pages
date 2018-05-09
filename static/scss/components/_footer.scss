@@ -12,6 +12,7 @@
             border: 2px solid #fff;
             border-radius: 50%;
             cursor: pointer;
+            position: relative;
                 &:not(:last-child) {
                     margin-right: 20px;
                 }
@@ -19,6 +20,11 @@
                     line-height: 60px;
                     font-size: 30px;
                     color: #fff;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
                 }
         }
     .ftrcopy {

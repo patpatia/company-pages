@@ -100,17 +100,20 @@
   .header .bg-img {
     display: none; }
   .header h1 {
-    font-size: 27px;
+    font-size: 24px;
     max-width: 500px;
-    top: 30%; }
+    top: 35%; }
+    .header h1:after {
+      height: 2px;
+      bottom: -12px; }
   .header h4 {
-    font-size: 18px;
+    font-size: 15px;
     max-width: 400px;
-    top: 58%; }
+    top: 70%; }
   .header .logo-img {
     top: 15px;
     left: 20px;
-    width: 125px; } }
+    width: 110px; } }
 
 @media (min-width: 320px) and (max-width: 360px) {
   .header .bg-img-mobile {
@@ -120,11 +123,14 @@
   .header h1 {
     font-size: 23px;
     max-width: 360px;
-    top: 32%; }
+    top: 37%; }
+    .header h1:after {
+      height: 2px;
+      bottom: -12px; }
   .header h4 {
     font-size: 14px;
     max-width: 320px;
-    top: 62%; }
+    top: 72%; }
   .header .logo-img {
     width: 90px;
     top: 15px;
@@ -177,13 +183,19 @@ html, body {
     height: 60px;
     border: 2px solid #fff;
     border-radius: 50%;
-    cursor: pointer; }
+    cursor: pointer;
+    position: relative; }
     .footer .ico:not(:last-child) {
       margin-right: 20px; }
     .footer .ico a {
       line-height: 60px;
       font-size: 30px;
-      color: #fff; }
+      color: #fff;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0; }
   .footer .ftrcopy a {
     color: #fff; }
 

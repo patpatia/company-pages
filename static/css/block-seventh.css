@@ -80,7 +80,7 @@
     width: 100%; } }
 
 @media (min-width: 320px) and (max-width: 767px) {
-  .seventh .content .row:first-child {
+  .seventh .content .row {
     margin-bottom: 0; }
   .seventh .content .col {
     margin-bottom: 10px;
