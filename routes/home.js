@@ -5,6 +5,7 @@ What all is visible to the eyes comes right through here.
 **/
 
 var assetsMapper = require("../asset-mapper.json")
+var jobList = require("../views/partials/exploreOpportunities/jobs.json")
 
 module.exports = function(settings){
 	var app = settings.app;
@@ -30,6 +31,7 @@ module.exports = function(settings){
 			title: "",
 			styles:  assetsMapper["index"]["styles"][mode],
 			scripts: assetsMapper["index"]["scripts"][mode],
+			jobs: jobList["jobs"],
 			baseUrl: baseUrl
 		});
 	});

@@ -54,7 +54,8 @@
 		footer: 'footer',
 		ourCulture: 'our-culture',
 		bestPractices: 'best-practices',
-		testimonialQuote: 'testimonialQuote'
+		testimonialQuote: 'testimonial-quote',
+		job: 'partials/exploreOpportunities/job'
 	});
 	app.set('view engine', 'html');
 	app.set('views', __dirname + '/views');
