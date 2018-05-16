@@ -51,7 +51,10 @@
 	app.engine('html', require('hogan-express'));
 	app.set('partials',{
 		header: 'header',
-		footer: 'footer'
+		footer: 'footer',
+		ourCulture: 'our-culture',
+		bestPractices: 'best-practices',
+		testimonialQuote: 'testimonialQuote'
 	});
 	app.set('view engine', 'html');
 	app.set('views', __dirname + '/views');

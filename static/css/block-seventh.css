@@ -30,9 +30,8 @@
     .seventh .content .row {
       font-size: 0;
       width: 80%;
-      margin: 0 auto; }
-      .seventh .content .row:first-child {
-        margin-bottom: 20px; }
+      margin: 0 auto;
+      margin-bottom: 20px; }
     .seventh .content .col {
       display: inline-block;
       width: calc(50% - 10px);
@@ -40,7 +39,8 @@
       border: 1px solid rgba(224, 224, 224, 0.5);
       background-color: #fff;
       cursor: pointer;
-      position: relative; }
+      position: relative;
+      word-wrap: break-word; }
       .seventh .content .col:hover {
         border: 1px solid #da491c; }
         .seventh .content .col:hover .primary_text {
@@ -58,10 +58,16 @@
       max-height: 100px;
       width: 76px;
       height: 76px;
-      border-radius: 50%; }
-      .seventh .content .image img {
-        border-radius: 50%;
-        height: 100%; }
+      border-radius: 50%;
+      position: relative;
+      background-color: #008ec5; }
+      .seventh .content .image i {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%); }
+        .seventh .content .image i:before {
+          color: #fff; }
     .seventh .content .primary_text {
       font-family: "MyriadProSemibold";
       font-size: 17px;
@@ -80,7 +86,7 @@
     width: 100%; } }
 
 @media (min-width: 320px) and (max-width: 767px) {
-  .seventh .content .row:first-child {
+  .seventh .content .row {
     margin-bottom: 0; }
   .seventh .content .col {
     margin-bottom: 10px;

@@ -30,9 +30,9 @@
             font-size: 0;
             width: 80%;
             margin: 0 auto;
-            &:first-child {
+
                 margin-bottom: 20px;
-            }
+
         }
         .col {
             display: inline-block;
@@ -42,6 +42,7 @@
             background-color: #fff;
             cursor: pointer;
             position: relative;
+            word-wrap: break-word;
             &:hover {
                 border: 1px solid $orange;
                 .primary_text {
@@ -65,9 +66,16 @@
             width: 76px;
             height: 76px;
             border-radius: 50%;
-            img {
-                border-radius: 50%;
-                height: 100%;
+            position: relative;
+            background-color: #008ec5;
+            i {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                &:before {
+                    color: #fff;
+                }
             }
         }
         .primary_text {
@@ -104,9 +112,9 @@
 
 
             .row {
-                &:first-child {
+
                     margin-bottom: 0;
-                }
+
             }
             .col {
                 margin-bottom: 10px;

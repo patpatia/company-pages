@@ -83,7 +83,7 @@
 
 @media (min-width: 320px) and (max-width: 767px) {
   .fifth .image {
-    margin-top: 50px; }
+    margin-top: 25px; }
     .fifth .image img {
       display: none; }
   .fifth .content_wrapper {
@@ -111,10 +111,14 @@
   .fifth .heading {
     padding: 0 30px; }
   .fifth .content_wrapper {
-    padding: 30px; } }
+    padding: 30px; }
+    .fifth .content_wrapper ul .primary_content {
+      font-size: 16px; } }
 
 @media (min-width: 320px) and (max-width: 360px) {
   .fifth .heading {
     padding: 0 10px; }
   .fifth .content_wrapper {
-    padding: 20px 10px; } }
+    padding: 20px 30px; }
+    .fifth .content_wrapper ul .primary_content {
+      font-size: 16px; } }

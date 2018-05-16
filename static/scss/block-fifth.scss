@@ -70,9 +70,7 @@
 
 @media (min-width: 901px) and (max-width: 1024px) {
     .fifth {
-
         .content_wrapper {
-
             top: 15%;
             bottom: 15%;
         }
@@ -109,7 +107,7 @@
     .fifth {
 
         .image {
-            margin-top: 50px;
+            margin-top: 25px;
             img {
                 display: none;
             }
@@ -154,6 +152,11 @@
         }
         .content_wrapper {
             padding: 30px;
+            ul {
+                .primary_content {
+                    font-size: 16px;
+                }
+            }
         }
     }
 }
@@ -164,7 +167,12 @@
             padding: 0 10px;
         }
         .content_wrapper {
-            padding: 20px 10px;
+            padding: 20px 30px;
+            ul {
+                .primary_content {
+                    font-size: 16px;
+                }
+            }
         }
     }
 }

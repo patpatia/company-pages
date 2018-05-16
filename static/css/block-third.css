@@ -23,11 +23,11 @@
     .third .content:nth-child(6) {
       border-bottom: 0; }
   .third .content_wrapper {
-    width: 60%; }
+    width: 70%; }
     .third .content_wrapper:nth-child(3) .image {
       text-align: right; }
   .third .image {
-    width: 40%;
+    width: 30%;
     position: relative; }
     .third .image .youtube_ico {
       position: absolute;
