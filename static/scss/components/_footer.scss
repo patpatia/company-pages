@@ -1,16 +1,74 @@
+// .footer {
+//     background-color: rgba(0, 0, 0, 0.76);
+//     color: #fff;
+//     padding: 20px;
+//     .socicobox {
+//         margin-bottom: 20px;
+//     }
+//         .ico {
+//             display: inline-block;
+//             width: 60px;
+//             height: 60px;
+//             cursor: pointer;
+//             position: relative;
+//                 &:not(:last-child) {
+//                     margin-right: 20px;
+//                 }
+//                 a {
+//                     line-height: 60px;
+//                     font-size: 30px;
+//                     color: #fff;
+//                     position: absolute;
+//                     top: 0;
+//                     left: 0;
+//                     right: 0;
+//                     bottom: 0;
+//                     i:before {
+//                         color: #fff !important;
+//                         font-size: 60px !important;
+//                     }
+//                 }
+//         }
+//     .ftrcopy {
+//         a {
+//             color: #fff;
+
+//         }
+//     }
+// }
+
+
+// @media (min-width: 320px) and (max-width: 480px) {
+//     .footer {
+//         .ico {
+//             width: 40px;
+//             height: 40px;
+//             &:not(:last-child) {
+//                 margin-right: 10px;
+//             }
+//             a {
+//                 line-height: 40px;
+//                 font-size: 20px;
+//             }
+//         }
+
+//     }
+
+// }
+
+
 .footer {
     background-color: rgba(0, 0, 0, 0.76);
     color: #fff;
     padding: 20px;
+    font-family:"Lato";
+    position: relative;
     .socicobox {
         margin-bottom: 20px;
     }
         .ico {
             display: inline-block;
-            width: 60px;
-            height: 60px;
             cursor: pointer;
-            position: relative;
                 &:not(:last-child) {
                     margin-right: 20px;
                 }
@@ -18,31 +76,36 @@
                     line-height: 60px;
                     font-size: 30px;
                     color: #fff;
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    right: 0;
-                    bottom: 0;
-                    i:before {
-                        color: #fff !important;
-                        font-size: 60px !important;
-                    }
+                    // .icon-facebook2:hover:before{
+                    //     color: #678de3;
+                    // }
+                    // .icon-twitter2:hover:before{
+                    //     color: #5cb2ee;
+                    // }
+                    // .icon-linkedin2:hover:before{
+                    //     background: #0274b3;
+                    // }
+                    // .icon-youtube2:hover:before{
+                    //     background: #df2926;
+                    // }
+                    // .icon-home2:hover:before{
+                    //     background: #676565;
+                    // }
                 }
         }
     .ftrcopy {
         a {
             color: #fff;
+            text-decoration: none;
 
         }
     }
 }
 
-
-@media (min-width: 320px) and (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 479px) {
     .footer {
         .ico {
-            width: 40px;
-            height: 40px;
+            //font-size: 10px;
             &:not(:last-child) {
                 margin-right: 10px;
             }
@@ -51,7 +114,31 @@
                 font-size: 20px;
             }
         }
+        .icon-facebook2:before,
+        .icon-twitter2:before,
+        .icon-linkedin2:before,
+        .icon-home2:before,{
+            background: #3D3D3D;
+            padding: 0;
+            border-radius: 0;
+            font-size: 40px;
+        }
 
     }
 
 }
+
+@media (min-width: 480px) and (max-width: 767px){
+    .footer{
+        .icon-facebook2:before,
+        .icon-twitter2:before,
+        .icon-linkedin2:before,
+        .icon-home2:before,{
+            background: #3D3D3D;
+            padding: 0;
+            border-radius: 0;
+            font-size: 60px;
+        }
+    }
+}
+

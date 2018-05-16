@@ -11,13 +11,11 @@
   padding-top: 45px; }
   .first .content_mobile {
     display: none; }
-  .first h2 {
-    text-transform: uppercase; }
-    .first h2:after {
-      width: 30%;
-      height: 2px;
-      left: 10%;
-      right: 0; }
+  .first h2:after {
+    width: 80px;
+    height: 2px;
+    left: 50%;
+    transform: translateX(-50%); }
   .first .primary_text {
     width: 70%;
     padding-right: 75px; }
@@ -29,6 +27,10 @@
   overflow: auto !important; }
 
 @media (min-width: 320px) and (max-width: 767px) {
+  .first h2:after {
+    width: 50px; } }
+
+@media (min-width: 320px) and (max-width: 1023px) {
   .first .content_mobile {
     display: block;
     position: relative; }

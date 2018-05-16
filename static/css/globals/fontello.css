@@ -43,7 +43,12 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   /* Uncomment for 3D effect */
-  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */ }
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+  color: #fff;
+  background: #008ec5;
+  border-radius: 100px;
+  padding: 10px;
+  font-size: 40px; }
 
 .icon-cancel:before {
   content: '\e800'; }
@@ -171,3 +176,24 @@
 
 .icon-home2::before {
   content: '\e80f'; }
+
+.icon-facebook2:hover:before {
+  color: #678de3; }
+
+.icon-twitter2:hover:before {
+  color: #5cb2ee; }
+
+.icon-linkedin2:hover:before {
+  color: #0274b3; }
+
+.icon-home2:hover:before {
+  color: #676565; }
+
+.icon-facebook2:before,
+.icon-twitter2:before,
+.icon-linkedin2:before,
+.icon-home2:before {
+  background: #3D3D3D;
+  padding: 0;
+  border-radius: 0;
+  font-size: 70px; }

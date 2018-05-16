@@ -22,9 +22,10 @@
       max-width: 100%;
       width: auto; }
   .fourth h2:after {
-    width: 30%;
+    width: 80px;
     height: 2px;
-    left: 25%; }
+    left: 50%;
+    transform: translateX(-50%); }
   .fourth .content_wrapper .primary_text {
     margin-top: 40px;
     padding-right: 75px; }
@@ -50,6 +51,8 @@
     display: none !important; }
 
 @media (min-width: 320px) and (max-width: 767px) {
+  .fourth h2:after {
+    width: 50px; }
   .fourth .col_container {
     padding-bottom: 0 !important; }
   .fourth .content_wrapper {

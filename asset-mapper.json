@@ -2,17 +2,17 @@
 	"index": {
 		"styles": {
 			"debug" : [
+				"static/css/index.css",
 				"static/css/globals/reset.css",
 				"static/css/globals/fontello.css",
 				"static/css/globals/jquery-ui.min.css",
 				"static/css/slick.css",
 				"static/css/slick-theme.css",
-            	"static/css/components/components.css",
+				"static/css/components/components.css",
 				"static/css/slick-slider.css",
 				"static/css/animate.css",
 				"static/css/nav.css",
 				"static/css/modal.css",
-            	"static/css/index.css",
 				"static/css/about-us.css",
 				"static/css/our-commitment.css",
 				"static/css/our-culture.css",

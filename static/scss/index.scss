@@ -1,6 +1,12 @@
 @import 'components/_type';
 @import 'components/_colors';
 
+.main-wrapper{
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
 .divider {
     border: 0;
     height: 0;

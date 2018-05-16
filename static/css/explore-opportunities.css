@@ -10,11 +10,10 @@
 .seventh {
   background-color: #f8f8f8; }
   .seventh h2:after {
-    width: 30%;
+    width: 80px;
     height: 2px;
     left: 50%;
-    right: 0;
-    transform: translate(-50%); }
+    transform: translateX(-50%); }
   .seventh .heading {
     text-align: center; }
   .seventh .sub_content {
@@ -42,9 +41,7 @@
       position: relative;
       word-wrap: break-word; }
       .seventh .content .col:hover {
-        border: 1px solid #da491c; }
-        .seventh .content .col:hover .primary_text {
-          color: #da491c; }
+        box-shadow: 0px 1px 6px 0px #dddddd; }
       .seventh .content .col:first-child {
         margin-right: 20px; }
       .seventh .content .col a {
@@ -86,6 +83,8 @@
     width: 100%; } }
 
 @media (min-width: 320px) and (max-width: 767px) {
+  .seventh h2:after {
+    width: 50px; }
   .seventh .content .row {
     margin-bottom: 0; }
   .seventh .content .col {

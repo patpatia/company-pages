@@ -9,26 +9,36 @@
     }
     
     h2 {
-        text-transform: uppercase;
+        // text-transform: uppercase;
         &:after {
-	    	width:30%;
+	    	width:80px;
 	    	height:2px;
-	    	left:10%;
-	    	right:0;
+	    	left:50%;
+            transform: translateX(-50%);
 	    }
     }
     .primary_text {
         width: 70%;
         padding-left: 75px;
+        vertical-align: middle;
+        display: inline-block;
     }
     .image {
         width: 30%;
+        vertical-align: middle;
+        display: inline-block;
     }
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
 
     .eigth {
+
+        h2 {
+            &:after {
+                width:50px;
+            }
+        }
         .heading {
             margin-left: 0;
         }

@@ -20,9 +20,10 @@
     }
     h2 {
         &:after {
-	    	width:30%;
+	    	width:80px;
 	    	height:2px;
-            left: 25%;
+	    	left:50%;
+            transform: translateX(-50%);
 	    }
     }
     .content_wrapper {
@@ -70,6 +71,12 @@
 @media (min-width: 320px) and (max-width: 767px) {
 
     .fourth {
+
+        h2 {
+            &:after {
+                width:50px;
+            }
+        }
 
         .col_container {
             padding-bottom: 0 !important;
