@@ -58,10 +58,16 @@
       max-height: 100px;
       width: 76px;
       height: 76px;
-      border-radius: 50%; }
-      .seventh .content .image img {
-        border-radius: 50%;
-        height: 100%; }
+      border-radius: 50%;
+      position: relative;
+      background-color: #008ec5; }
+      .seventh .content .image i {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%); }
+        .seventh .content .image i:before {
+          color: #fff; }
     .seventh .content .primary_text {
       font-family: "MyriadProSemibold";
       font-size: 17px;

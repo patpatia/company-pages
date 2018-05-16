@@ -1,8 +1,8 @@
 @charset "UTF-8";
 @font-face {
   font-family: 'fontello';
-  src: url("../../fonts/fontello.eot");
-  src: url("../../fonts/fontello.eot#iefix") format("embedded-opentype"), url("../../fonts/fontello.woff2") format("woff2"), url("../../fonts/fontello.woff") format("woff"), url("../../fonts/fontello.ttf") format("truetype"), url("../../fonts/fontello.svg#fontello") format("svg");
+  src: url("../../fonts/fontello_wns.eot");
+  src: url("../../fonts/fontello_wns.eot#iefix") format("embedded-opentype"), url("../../fonts/fontello_wns.woff2") format("woff2"), url("../../fonts/fontello_wns.woff") format("woff"), url("../../fonts/fontello_wns.ttf") format("truetype"), url("../../fonts/fontello_wns.svg#fontello") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -135,3 +135,39 @@
 
 .icon-maternity_policy::before {
   content: '\e808'; }
+
+.icon-bpo::before {
+  content: '\e803'; }
+
+.icon-banking::before {
+  content: '\e802'; }
+
+.icon-sales::before {
+  content: '\e800'; }
+
+.icon-operation::before {
+  content: '\e80c'; }
+
+.icon-legal::before {
+  content: '\e80b'; }
+
+.icon-consulting::before {
+  content: '\e809'; }
+
+.icon-system::before {
+  content: '\e801'; }
+
+.icon-hr::before {
+  content: '\e80a'; }
+
+.icon-facebook2::before {
+  content: '\e80d'; }
+
+.icon-twitter2::before {
+  content: '\e811'; }
+
+.icon-linkedin2::before {
+  content: '\e810'; }
+
+.icon-home2::before {
+  content: '\e80f'; }

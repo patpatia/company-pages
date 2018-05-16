@@ -181,8 +181,6 @@ html, body {
     display: inline-block;
     width: 60px;
     height: 60px;
-    border: 2px solid #fff;
-    border-radius: 50%;
     cursor: pointer;
     position: relative; }
     .footer .ico:not(:last-child) {
@@ -196,6 +194,9 @@ html, body {
       left: 0;
       right: 0;
       bottom: 0; }
+      .footer .ico a i:before {
+        color: #fff !important;
+        font-size: 60px !important; }
   .footer .ftrcopy a {
     color: #fff; }
 

@@ -66,9 +66,16 @@
             width: 76px;
             height: 76px;
             border-radius: 50%;
-            img {
-                border-radius: 50%;
-                height: 100%;
+            position: relative;
+            background-color: #008ec5;
+            i {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                &:before {
+                    color: #fff;
+                }
             }
         }
         .primary_text {
@@ -107,7 +114,7 @@
             .row {
 
                     margin-bottom: 0;
-                
+
             }
             .col {
                 margin-bottom: 10px;
