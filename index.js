@@ -54,7 +54,14 @@
 		footer: 'footer',
 		ourCulture: 'our-culture',
 		bestPractices: 'best-practices',
-		testimonialQuote: 'testimonialQuote'
+		testimonialQuote: 'testimonial-quote',
+		testimonialFullImage: 'testimonial-full-image',
+		aboutUs: 'about-us',
+		exploreOpportunities: 'explore-opportunities',
+		ourInitiatives: 'our-initiatives',
+		ourCommitment: 'our-commitment',
+		perksAndBenefits: 'perks-and-benefits'
+
 	});
 	app.set('view engine', 'html');
 	app.set('views', __dirname + '/views');

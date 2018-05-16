@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css?family=Comfortaa|Droid+Sans|Open+Sans:400,600,700");
+@font-face {
+  font-family: "MyriadProSemibold";
+  src: url("/static/fonts/MyriadPro-Semibold.otf") format("opentype"); }
+
+@font-face {
+  font-family: "ProximaRegular";
+  src: url("/static/fonts/ProximaSansRegular Regular.ttf") format("opentype"); }
+
+.ninth {
+  font-weight: 300;
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 0; }
+  .ninth .slick-prev:before,
+  .ninth .slick-next:before {
+    font-size: 60px; }
+  .ninth .slick-prev {
+    left: 15px; }
+  .ninth .heading {
+    text-align: center; }
+  .ninth h2:after {
+    width: 80px;
+    height: 2px;
+    left: 50%;
+    transform: translateX(-50%); }
+  .ninth .image {
+    position: relative;
+    margin-top: 60px;
+    width: 100%;
+    opacity: 1; }
+    .ninth .image#garima-story {
+      background: url("../../images/Employee-story_ Garima.jpg");
+      background-size: cover;
+      width: 100%;
+      height: 700px; }
+    .ninth .image#pooja-story {
+      background: url("../../images/Employee-story_ Pooja.jpg");
+      background-size: cover;
+      width: 100%;
+      height: 700px; }
+    .ninth .image .content_wrapper {
+      position: absolute;
+      left: 90px;
+      top: 15%;
+      bottom: 15%;
+      right: calc(100% - 830px);
+      padding: 60px;
+      background-color: #fff;
+      opacity: 0.9; }
+      .ninth .image .content_wrapper .primary_text {
+        padding: 20px 0;
+        z-index: 1; }
+      .ninth .image .content_wrapper .name {
+        display: block;
+        font-size: 20px;
+        margin-top: 20px;
+        font-weight: 600;
+        font-family: "Lato"; }
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .ninth .image .content_wrapper {
+    position: absolute;
+    left: 20px;
+    top: 15%;
+    bottom: 15%;
+    right: 20px;
+    background-color: #fff;
+    opacity: 0.9;
+    height: fit-content;
+    padding: 20px 10px; }
+    .ninth .image .content_wrapper .primary_text {
+      padding: 20px; }
+    .ninth .image .content_wrapper .name {
+      display: block;
+      font-size: 25px;
+      margin-top: 20px;
+      font-family: "Lato";
+      font-weight: 600; } }
+
+@media (min-width: 768px) and (max-width: 960px) {
+  .ninth .slick-prev {
+    left: 7px; }
+  .ninth .slick-next {
+    right: 40px; }
+  .ninth .image .content_wrapper {
+    position: absolute;
+    left: 50px;
+    top: 15%;
+    bottom: 15%;
+    right: calc(100% - 80%);
+    padding: 60px;
+    background-color: white;
+    opacity: 0.9; }
+    .ninth .image .content_wrapper .primary_text {
+      padding: 20px 0; }
+    .ninth .image .content_wrapper .name {
+      display: block;
+      font-size: 20px;
+      margin-top: 20px;
+      font-weight: 600;
+      font-family: "Lato"; } }
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .ninth .slick-prev {
+    left: 0px; }
+  .ninth .slick-next {
+    right: 0px; }
+  .ninth .slick-prev:before,
+  .ninth .slick-next:before {
+    font-size: 30px; }
+  .ninth .image {
+    position: relative;
+    margin-top: 30px;
+    width: 100%;
+    background-size: cover;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-repeat: no-repeat;
+    background-position: left; }
+    .ninth .image .content_wrapper {
+      top: 5%; }
+      .ninth .image .content_wrapper .primary_text {
+        padding: 20px; }
+      .ninth .image .content_wrapper .name {
+        display: block;
+        font-size: 15px;
+        margin-top: 20px;
+        font-family: "Lato";
+        padding: 0 15px;
+        font-weight: 600; } }
+
+@media (min-width: 320px) and (max-width: 359px) {
+  .ninth .image#garima-story {
+    height: 900px;
+    position: relative;
+    background-position-x: -45%; }
+  .ninth .image#pooja-story {
+    height: 900px;
+    position: relative;
+    background-position-x: -45%; } }
+
+@media (min-width: 360px) and (max-width: 480px) {
+  .ninth .image#garima-story {
+    height: 800px;
+    position: relative;
+    background-position-x: -55%; }
+  .ninth .image#pooja-story {
+    height: 800px;
+    position: relative;
+    background-position-x: -55%; } }
+
+@media (min-width: 480px) and (max-width: 547px) {
+  .ninth .slick-prev {
+    left: -5px; }
+  .ninth .slick-next {
+    right: 5px; }
+  .ninth .slick-prev:before,
+  .ninth .slick-next:before {
+    font-size: 40px; }
+  .ninth .image#garima-story {
+    height: 800px;
+    position: relative;
+    background-position-x: -70%; }
+  .ninth .image#pooja-story {
+    height: 800px;
+    position: relative;
+    background-position-x: -70%; } }
+
+@media (min-width: 548px) and (max-width: 767px) {
+  .ninth .slick-prev {
+    left: -12px; }
+  .ninth .slick-next {
+    right: 9px; }
+  .ninth .slick-prev:before,
+  .ninth .slick-next:before {
+    font-size: 50px; }
+  .ninth .image#garima-story {
+    height: 600px;
+    position: relative;
+    background-position-x: 60%; }
+  .ninth .image#pooja-story {
+    height: 600px;
+    position: relative;
+    background-position-x: 60%; }
+  .ninth .image .content_wrapper {
+    top: 10%; } }
+
+@media (min-width: 768px) and (max-width: 960px) {
+  .ninth .slick-prev {
+    left: -12px; }
+  .ninth .slick-next {
+    right: 9px; }
+  .ninth .slick-prev:before,
+  .ninth .slick-next:before {
+    font-size: 50px; }
+  .ninth .image#garima-story {
+    height: 830px;
+    position: relative;
+    background-position-x: 60%; }
+  .ninth .image#pooja-story {
+    height: 830px;
+    position: relative;
+    background-position-x: 60%; }
+  .ninth .image .content_wrapper {
+    top: 10%; } }

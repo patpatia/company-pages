@@ -26,7 +26,7 @@ module.exports = function(settings){
 	}
 
 	app.get("/", isAuthenticated,function(req, res){
-		res.render("index", {
+		res.render("index12", {
 			title: "",
 			styles:  assetsMapper["index"]["styles"][mode],
 			scripts: assetsMapper["index"]["scripts"][mode],

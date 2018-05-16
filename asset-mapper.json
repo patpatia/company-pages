@@ -13,14 +13,15 @@
 				"static/css/nav.css",
 				"static/css/modal.css",
             	"static/css/index.css",
-				"static/css/block-first.css",
-				"static/css/block-second.css",
-				"static/css/block-third.css",
-				"static/css/block-fourth.css",
-				"static/css/block-fifth.css",
-				"static/css/block-sixth.css",
-				"static/css/block-seventh.css",
-				"static/css/block-eigth.css"
+				"static/css/about-us.css",
+				"static/css/our-commitment.css",
+				"static/css/our-culture.css",
+				"static/css/our-initiatives.css",
+				"static/css/perks-and-benefits.css",
+				"static/css/testimonial-quote.css",
+				"static/css/testimonial-full-image.css",
+				"static/css/best-practices.css",
+				"static/css/explore-opportunities.css"
 			],
 			"prod": [
 				"static/build/css/index.min.css"

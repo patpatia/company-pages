@@ -24,8 +24,8 @@
     "nodemon": "^1.15.1"
   },
   "devDependencies": {
-    "gulp": "^3.9.1",
     "del": "^3.0.0",
+    "gulp": "^3.9.1",
     "gulp-concat": "^2.6.1",
     "gulp-debug": "^3.1.0",
     "gulp-mocha": "^4.3.1",
