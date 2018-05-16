@@ -1,0 +1,18 @@
+<div class="block third">
+    <div class="heading">
+        <h2>Our Initiatives</h2>
+    </div>
+    {{#initiatives.length}}
+        {{#initiatives}}
+            
+            {{> initiativeLeft}}
+            {{> initiativeRight}}
+        {{/initiatives}}
+    {{/initiatives.length}}
+
+    {{#initiatives.length}}
+        {{#initiatives}}
+            {{> initiativeMobile}}
+        {{/initiatives}}
+    {{/initiatives.length}}
+</div>

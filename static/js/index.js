@@ -30,7 +30,10 @@ $(document).ready(function(){
 
     $('.slider_fourth_mobile').slick({
         dots:true,
-        arrows: false
+        arrows: false,
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 3
     });
 
     $('.center_slider').slick({

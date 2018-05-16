@@ -1,0 +1,24 @@
+{
+    "bestPracticesSection": {
+        "bgImg": "static/images/wnbestPractices-min.jpg",
+        "practices": [
+            {
+                "title": "WNS Cares",
+                "description": "With a mission to “Educate, “Empower” and “Enrich” to make a difference around the globe."
+            },
+            {
+                "title": "WNS Cares",
+                "description": "With a mission to “Educate, “Empower” and “Enrich” to make a difference around the globe."
+            },
+            {
+                "title": "WNS Cares",
+                "description": "With a mission to “Educate, “Empower” and “Enrich” to make a difference around the globe."
+            },
+            {
+                "title": "WNS Cares",
+                "description": "With a mission to “Educate, “Empower” and “Enrich” to make a difference around the globe."
+            }
+        ]
+    }
+
+}

@@ -1,0 +1,15 @@
+<div class="block seventh">
+    <div class="heading">
+        <h2>Explore Opportunities at Accenture</h2>
+    </div>
+    <div class="sub_content">
+        We believe that each one of us should be able to find our dream job, and we constantly strive hard to make that possible. Apply now
+    </div>
+    <div class="content">
+        {{#jobs.length}}
+            {{#jobs}}
+                {{> job}}
+            {{/jobs}}
+        {{/jobs.length}}
+    </div>
+</div>

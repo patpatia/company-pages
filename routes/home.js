@@ -5,7 +5,12 @@ What all is visible to the eyes comes right through here.
 **/
 
 var assetsMapper = require("../asset-mapper.json")
-var jobList = require("../views/partials/exploreOpportunities/jobs.json")
+var jobList = require("../partialsContent/jobs.json")
+var perkList = require("../partialsContent/perksAndBenefits.json")
+var aboutUs = require("../partialsContent/aboutUs.json")
+var bestPractices = require("../partialsContent/bestPractices.json")
+var ourCommitment = require("../partialsContent/ourCommitment.json")
+var ourInitiative = require("../partialsContent/ourInitiative.json")
 
 module.exports = function(settings){
 	var app = settings.app;
@@ -32,6 +37,12 @@ module.exports = function(settings){
 			styles:  assetsMapper["index"]["styles"][mode],
 			scripts: assetsMapper["index"]["scripts"][mode],
 			jobs: jobList["jobs"],
+			perksFirst: perkList["perksFirst"],
+			perksSecond: perkList["perksSecond"],
+			aboutUs: aboutUs["aboutUs"],
+			bestPractices: bestPractices["bestPracticesSection"],
+			commitment: ourCommitment["commitment"],
+			initiatives: ourInitiative["initiatives"],
 			baseUrl: baseUrl
 		});
 	});

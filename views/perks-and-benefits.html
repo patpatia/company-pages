@@ -1,0 +1,45 @@
+<div class="block fourth">
+    <div class="image">
+        <img src="static/images_wns/snow-min.png" alt="">
+    </div>
+    <div class="col col_w_half content_wrapper">
+        <div class="heading">
+            <h2>Perks and Benefits</h2>
+        </div>
+        <div class="primary_text">
+            <p>We recognize the unique needs of professionals in the workplace and provide them with various perks and benefits</p>
+        </div>
+    </div>
+    <div class="col col_w_half slider_fourth">
+        <div class="row">
+            {{#perksFirst.length}}
+                {{#perksFirst}}
+                    {{> perk}}
+                {{/perksFirst}}
+            {{/perksFirst.length}}
+        </div>
+        <div class="row">
+            {{#perksSecond.length}}
+                {{#perksSecond}}
+                    {{> perk}}
+                {{/perksSecond}}
+            {{/perksSecond.length}}
+        </div>
+    </div>
+    <div class="col col_w_full slider_fourth_mobile">
+        <div class="row">
+            {{#perksFirst.length}}
+                {{#perksFirst}}
+                    {{> perk}}
+                {{/perksFirst}}
+            {{/perksFirst.length}}
+        </div>
+        <div class="row">
+            {{#perksSecond.length}}
+                {{#perksSecond}}
+                    {{> perk}}
+                {{/perksSecond}}
+            {{/perksSecond.length}}
+        </div>
+    </div>
+</div>

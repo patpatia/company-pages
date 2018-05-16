@@ -38,7 +38,6 @@
 	var config = require(program.config);
 	var vault = program.vault;
 
-
 	var app = express();
 	// app.use(session({
 	//   secret: 'some secret',
@@ -49,13 +48,23 @@
 	app.use(compression()); //compressing payload on every request
 
 	app.engine('html', require('hogan-express'));
-	app.set('partials',{
+	app.set('partials', {
 		header: 'header',
 		footer: 'footer',
 		ourCulture: 'our-culture',
 		bestPractices: 'best-practices',
 		testimonialQuote: 'testimonial-quote',
-		job: 'partials/exploreOpportunities/job'
+		testimonialFullImage: 'testimonial-full-image',
+		aboutUs: 'about-us',
+		exploreOpportunities: 'explore-opportunities',
+		ourInitiatives: 'our-initiatives',
+		ourCommitment: 'our-commitment',
+		perksAndBenefits: 'perks-and-benefits',
+		job: 'partials/exploreOpportunities/job',
+		perk: 'partials/perksAndBenefits/perk-and-benefit',
+		initiativeLeft: 'partials/ourInitiative/initiative-left',
+		initiativeRight: 'partials/ourInitiative/initiative-right',
+		initiativeMobile: 'partials/ourInitiative/initiative-mobile'
 	});
 	app.set('view engine', 'html');
 	app.set('views', __dirname + '/views');
