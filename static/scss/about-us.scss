@@ -7,12 +7,13 @@
         display: none;
     }
     h2 {
-        text-transform: uppercase;
+        // text-transform: uppercase;
         &:after {
-	    	width:30%;
+
+            width:80px;
 	    	height:2px;
-	    	left:10%;
-	    	right:0;
+	    	left:50%;
+            transform: translateX(-50%);
 	    }
     }
     .primary_text {
@@ -28,7 +29,19 @@
     height: auto !important;
     overflow: auto !important;
 }
+
 @media (min-width: 320px) and (max-width: 767px) {
+
+    .first{
+        h2 {
+            &:after {
+                width:50px;
+            }
+        }
+    }
+}
+
+@media (min-width: 320px) and (max-width: 1023px) {
 
     .first {
         .content_mobile {

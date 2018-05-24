@@ -4,9 +4,12 @@
     </div>
     {{#initiatives.length}}
         {{#initiatives}}
-            
-            {{> initiativeLeft}}
-            {{> initiativeRight}}
+            {{#left}}
+                {{> initiativeLeft}}
+            {{/left}}
+            {{^left}}
+                {{> initiativeRight}}
+            {{/left}}    
         {{/initiatives}}
     {{/initiatives.length}}
 

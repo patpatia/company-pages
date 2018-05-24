@@ -32,13 +32,23 @@ module.exports = function(settings){
 	}
 
 	app.get("/", isAuthenticated,function(req, res){
+		var i
+		perkListLength = perkList["perkList"].length
+		j = 0;
+		perkObj = {};
+		for(i = 0; i < perkListLength; i++) {
+			if(i%2 == 0) {
+				 j++;
+				 perkObj["perks-"+j+""] = []
+			}
+			perkObj["perks-"+j+""].push(perkList["perkList"][i])
+		}
 		res.render("index", {
 			title: "",
 			styles:  assetsMapper["index"]["styles"][mode],
 			scripts: assetsMapper["index"]["scripts"][mode],
 			jobs: jobList["jobs"],
-			perksFirst: perkList["perksFirst"],
-			perksSecond: perkList["perksSecond"],
+			perkObj: perkObj,
 			aboutUs: aboutUs["aboutUs"],
 			bestPractices: bestPractices["bestPracticesSection"],
 			commitment: ourCommitment["commitment"],

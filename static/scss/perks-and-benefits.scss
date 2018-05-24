@@ -2,10 +2,10 @@
 @import 'components/_colors';
 
 .fourth {
+    position: relative;
     .slider_fourth_mobile {
         display: none;
     }
-    position: relative;
     .image {
         position: absolute;
         top: 0;
@@ -18,11 +18,15 @@
             width: auto;
         }
     }
+    .slider_fourth {
+        display: inline-block;
+    }
     h2 {
         &:after {
-	    	width:30%;
+	    	width:80px;
 	    	height:2px;
-            left: 25%;
+	    	left:50%;
+            transform: translateX(-50%);
 	    }
     }
     .content_wrapper {
@@ -31,46 +35,61 @@
             padding-right: 75px;
         }
     }
-        .col_container:first-child {
-            padding-bottom: 50px;
+
+    .col {
+        &:nth-child(odd) {
+            padding-right: 20px;
         }
 
-        .col_container {
-            .col {
-                padding-right: 50px;
-            }
+        &:nth-child(-n+2) {
+            padding-bottom: 40px;
         }
-            .col {
 
-                .heading {
-                    font-family: $perksHeadingSemiBold;
-                    font-size: $perksHeadingSize;
-                    padding: 15px 0;
-                    color: $secondaryText;
-                }
-                .text {
-                    font-family: $proxiReg;
-                    font-size: $perksContent;
-                    line-height: 1.4;
-                    color: $perksTextColor;
-                }
-            }
+        &:nth-child(n+3) {
+            padding-bottom: 20px;
+        }
 
-            .slick-dots {
-                text-align: left;
-                left: -10px;
-                bottom: -30px;
-            }
-            .slick-arrow {
-                display: none !important;
-            }
+        .heading {
+            font-family: $perksHeadingSemiBold;
+            font-size: $perksHeadingSize;
+            padding: 15px 0;
+            color: $secondaryText;
+        }
+        .text {
+            font-family: $proxiReg;
+            font-size: $perksContent;
+            line-height: 1.4;
+            color: $perksTextColor;
+        }
+
+        .f-icon:before {
+            color: $orange;
+            background-color: #fff;
+            margin: 0;
+            padding: 0;
+            font-size: 30px;
+        }
+    }
+
+    .slick-dots {
+        text-align: left;
+        left: -5px;
+        bottom: -30px;
+    }
+    .slick-arrow {
+        display: none !important;
+    }
 }
 
 
 @media (min-width: 320px) and (max-width: 767px) {
 
     .fourth {
-
+        h2 {
+            &:after {
+                width:50px;
+            }
+        }
         .col_container {
             padding-bottom: 0 !important;
         }

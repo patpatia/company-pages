@@ -29,8 +29,7 @@
     left: 30px;
     width: 150px; }
   .header img {
-    width: 100%;
-    object-fit: cover; }
+    width: 100%; }
   .header h1 {
     position: absolute;
     top: 40%;
@@ -61,13 +60,12 @@
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    width: 100%;
     font-size: 24px;
     color: #fff;
     max-width: 850px;
     font-family: "ProximaRegular";
     font-weight: 400;
-    line-height: 1.3;
+    line-height: 1.4;
     padding: 0 10px; }
   .header .bg-img-mobile {
     display: none; }
@@ -174,38 +172,45 @@ html, body {
 .footer {
   background-color: rgba(0, 0, 0, 0.76);
   color: #fff;
-  padding: 20px; }
+  padding: 20px;
+  font-family: "Lato";
+  position: relative; }
   .footer .socicobox {
     margin-bottom: 20px; }
   .footer .ico {
     display: inline-block;
-    width: 60px;
-    height: 60px;
-    cursor: pointer;
-    position: relative; }
+    cursor: pointer; }
     .footer .ico:not(:last-child) {
       margin-right: 20px; }
     .footer .ico a {
       line-height: 60px;
       font-size: 30px;
-      color: #fff;
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0; }
-      .footer .ico a i:before {
-        color: #fff !important;
-        font-size: 60px !important; }
+      color: #fff; }
   .footer .ftrcopy a {
-    color: #fff; }
+    color: #fff;
+    text-decoration: none; }
 
-@media (min-width: 320px) and (max-width: 480px) {
-  .footer .ico {
-    width: 40px;
-    height: 40px; }
-    .footer .ico:not(:last-child) {
-      margin-right: 10px; }
-    .footer .ico a {
-      line-height: 40px;
-      font-size: 20px; } }
+@media (min-width: 320px) and (max-width: 479px) {
+  .footer .ico:not(:last-child) {
+    margin-right: 10px; }
+  .footer .ico a {
+    line-height: 40px;
+    font-size: 20px; }
+  .footer .icon-facebook2:before,
+  .footer .icon-twitter2:before,
+  .footer .icon-linkedin2:before,
+  .footer .icon-home2:before {
+    background: #3D3D3D;
+    padding: 0;
+    border-radius: 0;
+    font-size: 40px; } }
+
+@media (min-width: 480px) and (max-width: 767px) {
+  .footer .icon-facebook2:before,
+  .footer .icon-twitter2:before,
+  .footer .icon-linkedin2:before,
+  .footer .icon-home2:before {
+    background: #3D3D3D;
+    padding: 0;
+    border-radius: 0;
+    font-size: 60px; } }

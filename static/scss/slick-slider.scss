@@ -1,6 +1,15 @@
 @import 'components/_type';
 @import 'components/_colors';
 
+.slick-dots li {
+    margin: 0;
+    width: 25px;
+    button:before {
+        font-family: 'fontello';
+        font-size: 50px;
+    }
+}
+
 .slick-slide {
     outline: none;
 }
@@ -9,9 +18,6 @@
     color: $orange;
 }
 
-.slick-dots li button:before {
-    font-size: 30px;
-}
 
 .slick-slide img {
     display: block;

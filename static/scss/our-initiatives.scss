@@ -12,24 +12,32 @@
 
     h2 {
         &:after {
-	    	width:30%;
+	    	width:80px;
 	    	height:2px;
-	    	right:20%;
-            left: unset;
+	    	left:50%;
+            transform: translateX(-50%);
 	    }
+    }
+
+    .sub_heading{
+        padding: 0 0 20px 0;
     }
 
     .content {
         padding: 50px 0;
         margin-top: 0;
-        border-bottom: 1px solid $borderColor;
+        
+        border-bottom: 1px solid #e2e2e2;
         &:nth-child(6) {
             border-bottom:0;
+            padding-bottom: 0;
         }
     }
 
     .content_wrapper {
         width: 70%;
+        vertical-align: middle;
+        display: inline-block;
         &:nth-child(3) {
             .image {
                 text-align: right;
@@ -37,36 +45,45 @@
         }
     }
 
-        .image {
-            width: 30%;
-            position: relative;
-            .youtube_ico {
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%,-50%);
-                width: 18%;
-                height: 25%;
-                cursor: pointer;
-            }
+    .image {
+        width: 30%;
+        position: relative;
+        vertical-align: middle;
+        display: inline-block;
+        .youtube_ico {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            width: 18%;
+            height: 25%;
+            cursor: pointer;
         }
-        .pad_left {
-            padding-left: 50px;
-        }
-        .pad_right {
-            padding-right: 50px;
-        }
+    }
+    .pad_left {
+        padding-left: 100px;
+    }
+    .pad_right {
+        padding-right: 100px;
+    }
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
 
     .third {
+
+        h2 {
+            &:after {
+                width:50px;
+            }
+        }
+
         .content_mobile {
             display: block;
             padding: 50px 0;
             margin-top: 0;
             &:not(:last-child) {
-                border-bottom: 1px solid $borderColor;
+                border-bottom: 1px solid #e2e2e2;
             }
         }
         .content {

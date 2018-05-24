@@ -30,10 +30,7 @@ $(document).ready(function(){
 
     $('.slider_fourth_mobile').slick({
         dots:true,
-        arrows: false,
-        infinite: true,
-        slidesToShow: 3,
-        slidesToScroll: 3
+        arrows: false
     });
 
     $('.center_slider').slick({
@@ -87,7 +84,7 @@ $(document).ready(function(){
 
 })
 
-$(".block.first").on("click",".read_more",function(e) {
+$("#readMore").click(function(e) {
     e.preventDefault();
     $(this).closest('.content_mobile').find('.primary_text').toggleClass('more');
     if($(this).closest('.content_mobile').find('.primary_text').hasClass("more")) {

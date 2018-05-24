@@ -8,10 +8,10 @@
     padding-bottom: 0;
     h2 {
         &:after {
-	    	width:30%;
+	    	width:80px;
 	    	height:2px;
-	    	right:20%;
-            left: unset;
+	    	left:50%;
+            transform: translateX(-50%);
 	    }
     }
     .heading {
@@ -44,6 +44,7 @@
             list-style: initial;
             li {
                 padding: 10px 0;
+                line-height: 1.4;
             }
             .primary_content {
                 font-weight: 700;
@@ -105,6 +106,12 @@
 @media (min-width: 320px) and (max-width: 767px) {
 
     .fifth {
+
+        h2 {
+            &:after {
+                width:50px;
+            }
+        }
 
         .image {
             margin-top: 25px;

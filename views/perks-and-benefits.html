@@ -1,6 +1,6 @@
 <div class="block fourth">
     <div class="image">
-        <img src="static/images_wns/snow-min.png" alt="">
+        <img src="static/images/snow-min.png" alt="">
     </div>
     <div class="col col_w_half content_wrapper">
         <div class="heading">
@@ -12,34 +12,58 @@
     </div>
     <div class="col col_w_half slider_fourth">
         <div class="row">
-            {{#perksFirst.length}}
-                {{#perksFirst}}
+            {{#perkObj.perks-1.length}}
+                {{#perkObj.perks-1}}
                     {{> perk}}
-                {{/perksFirst}}
-            {{/perksFirst.length}}
+                {{/perkObj.perks-1}}
+            {{/perkObj.perks-1.length}}
+            {{#perkObj.perks-2.length}}
+                {{#perkObj.perks-2}}
+                    {{> perk}}
+                {{/perkObj.perks-2}}
+            {{/perkObj.perks-2.length}}
         </div>
         <div class="row">
-            {{#perksSecond.length}}
-                {{#perksSecond}}
+            {{#perkObj.perks-3.length}}
+                {{#perkObj.perks-3}}
                     {{> perk}}
-                {{/perksSecond}}
-            {{/perksSecond.length}}
+                {{/perkObj.perks-3}}
+            {{/perkObj.perks-3.length}}
+            {{#perkObj.perks-4.length}}
+                {{#perkObj.perks-4}}
+                    {{> perk}}
+                {{/perkObj.perks-4}}
+            {{/perkObj.perks-4.length}}
         </div>
     </div>
     <div class="col col_w_full slider_fourth_mobile">
         <div class="row">
-            {{#perksFirst.length}}
-                {{#perksFirst}}
+            {{#perkObj.perks-1.length}}
+                {{#perkObj.perks-1}}
                     {{> perk}}
-                {{/perksFirst}}
-            {{/perksFirst.length}}
+                {{/perkObj.perks-1}}
+            {{/perkObj.perks-1.length}}
         </div>
         <div class="row">
-            {{#perksSecond.length}}
-                {{#perksSecond}}
+            {{#perkObj.perks-2.length}}
+                {{#perkObj.perks-2}}
                     {{> perk}}
-                {{/perksSecond}}
-            {{/perksSecond.length}}
+                {{/perkObj.perks-2}}
+            {{/perkObj.perks-2.length}}
+        </div>
+        <div class="row">
+            {{#perkObj.perks-3.length}}
+                {{#perkObj.perks-3}}
+                    {{> perk}}
+                {{/perkObj.perks-3}}
+            {{/perkObj.perks-3.length}}
+        </div>
+        <div class="row">
+            {{#perkObj.perks-4.length}}
+                {{#perkObj.perks-4}}
+                    {{> perk}}
+                {{/perkObj.perks-4}}
+            {{/perkObj.perks-4.length}}
         </div>
     </div>
 </div>

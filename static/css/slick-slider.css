@@ -7,14 +7,18 @@
   font-family: "ProximaRegular";
   src: url("/static/fonts/ProximaSansRegular Regular.ttf") format("opentype"); }
 
+.slick-dots li {
+  margin: 0;
+  width: 25px; }
+  .slick-dots li button:before {
+    font-family: 'fontello';
+    font-size: 50px; }
+
 .slick-slide {
   outline: none; }
 
 .slick-dots li.slick-active button:before, .slick-dots li button:focus {
   color: #da491c; }
-
-.slick-dots li button:before {
-  font-size: 30px; }
 
 .slick-slide img {
   display: block;
@@ -26,7 +30,7 @@
 
 @media (min-width: 320px) and (max-width: 767px) {
   .slick-dots li button:before {
-    font-size: 11px; } }
+    font-size: 30px; } }
 
 .sixth .slick-dots {
   text-align: center; }
