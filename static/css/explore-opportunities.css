@@ -39,7 +39,8 @@
       background-color: #fff;
       cursor: pointer;
       position: relative;
-      word-wrap: break-word; }
+      word-wrap: break-word;
+      height: 275px; }
       .seventh .content .col:hover {
         box-shadow: 0px 1px 6px 0px #dddddd; }
       .seventh .content .col:nth-child(odd) {
