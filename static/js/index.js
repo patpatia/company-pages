@@ -37,6 +37,7 @@ $(document).ready(function(){
         slidesToShow: 1,
         dots:true,
         arrows: true,
+        infinite: false,
         responsive: [
             {
               breakpoint: 769,

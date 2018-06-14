@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Comfortaa|Droid+Sans|Open+Sans:400,600,700");
 @font-face {
   font-family: "MyriadProSemibold";
@@ -8,130 +7,23 @@
   font-family: "ProximaRegular";
   src: url("/static/fonts/ProximaSansRegular Regular.ttf") format("opentype"); }
 
-@font-face {
-  font-family: 'fontello';
-  src: url("../font/fontello.eot?86898682");
-  src: url("../font/fontello.eot?86898682#iefix") format("embedded-opentype"), url("../font/fontello.woff2?86898682") format("woff2"), url("../font/fontello.woff?86898682") format("woff"), url("../font/fontello.ttf?86898682") format("truetype"), url("../font/fontello.svg?86898682#fontello") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
-/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
-/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
-/*
-  @media screen and (-webkit-min-device-pixel-ratio:0) {
-    @font-face {
-      font-family: 'fontello';
-      src: url('../font/fontello.svg?86898682#fontello') format('svg');
-    }
-  }
-  */
-[class^="icon-"]:before, [class*=" icon-"]:before {
-  font-family: "fontello";
-  font-style: normal;
-  font-weight: normal;
-  speak: none;
-  display: inline-block;
-  text-decoration: inherit;
-  width: 1em;
-  margin-right: .2em;
-  text-align: center;
-  /* opacity: .8; */
-  /* For safety - reset parent styles, that can break glyph codes*/
-  font-variant: normal;
-  text-transform: none;
-  /* fix buttons height, for twitter bootstrap */
-  line-height: 1em;
-  /* Animation center compensation - margins should be symmetric */
-  /* remove if not needed */
-  margin-left: .2em;
-  /* you can be more comfortable with increased icons size */
-  /* font-size: 120%; */
-  /* Font smoothing. That was taken from TWBS */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  /* Uncomment for 3D effect */
-  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */ }
-
-.icon-maternity:before {
-  content: '\e800'; }
-
-/* '' */
-.icon-bpo:before {
-  content: '\e801'; }
-
-/* '' */
-.icon-consulting:before {
-  content: '\e802'; }
-
-/* '' */
-.icon-hr:before {
-  content: '\e803'; }
-
-/* '' */
-.icon-legal:before {
-  content: '\e804'; }
-
-/* '' */
-.icon-returning-mothers-program:before {
-  content: '\e805'; }
-
-/* '' */
-.icon-sales:before {
-  content: '\e806'; }
-
-/* '' */
-.icon-system:before {
-  content: '\e807'; }
-
-/* '' */
-.icon-operation:before {
-  content: '\e808'; }
-
-/* '' */
-.icon-banking:before {
-  content: '\e809'; }
-
-/* '' */
-.icon-vaahini-woman-internal-network:before {
-  content: '\e80a'; }
-
-/* '' */
-.icon-adoption-and-surrogacy-leave:before {
-  content: '\e80b'; }
-
-/* '' */
-.icon-employee-assistance-program:before {
-  content: '\e80c'; }
-
-/* '' */
-.icon-flexi-policy:before {
-  content: '\e80d'; }
-
-/* '' */
-.icon-gender-diversity:before {
-  content: '\e80e'; }
-
-/* '' */
-.icon-lgbt:before {
-  content: '\e80f'; }
-
-/* '' */
 .seventh {
-  background-color: #f8f8f8; }
+  background-color: #f8f8f8;
+  position: relative;
+  font-weight: 300; }
   .seventh h2:after {
-    width: 30%;
+    width: 80px;
     height: 2px;
     left: 50%;
-    right: 0;
-    transform: translate(-50%); }
+    transform: translateX(-50%); }
   .seventh .heading {
     text-align: center; }
   .seventh .sub_content {
     text-align: center;
     font-size: 18px;
     margin: 30px 0;
-    font-family: "ProximaRegular";
-    line-height: 1.4;
+    font-family: "Lato";
+    line-height: 1.6;
     margin: 40px auto;
     max-width: 75%; }
   .seventh .content {
@@ -141,6 +33,8 @@
       width: 80%;
       margin: 0 auto;
       margin-bottom: 20px; }
+      .seventh .content .row:last-child {
+        margin-bottom: 0; }
     .seventh .content .col {
       display: inline-block;
       width: calc(50% - 10px);
@@ -150,9 +44,7 @@
       cursor: pointer;
       position: relative; }
       .seventh .content .col:hover {
-        border: 1px solid #da491c; }
-        .seventh .content .col:hover .primary_text {
-          color: #da491c; }
+        box-shadow: 0px 1px 6px 0px #dddddd; }
       .seventh .content .col:first-child {
         margin-right: 20px; }
       .seventh .content .col a {
@@ -167,29 +59,40 @@
       width: 76px;
       height: 76px;
       border-radius: 50%; }
-      .seventh .content .image img {
-        border-radius: 50%;
-        height: 100%; }
     .seventh .content .primary_text {
       font-family: "MyriadProSemibold";
       font-size: 17px;
       color: #2b2b2b;
       margin: 20px 0;
-      line-height: 1.4; }
+      line-height: 1.6; }
     .seventh .content .secondary_text {
-      font-family: "ProximaRegular";
+      font-family: "Lato";
       font-size: 13px;
-      color: #999; }
+      color: #999;
+      font-weight: 400; }
       .seventh .content .secondary_text p {
-        min-height: 20px; }
+        min-height: 20px;
+        line-height: 1.6;
+        word-break: break-word; }
 
 @media (min-width: 768px) and (max-width: 900px) {
   .seventh .content .row {
-    width: 100%; } }
+    width: 100%;
+    margin-bottom: 20px; }
+    .seventh .content .row:last-child {
+      margin-bottom: 0; }
+  .seventh .content .col {
+    height: 350px; } }
+
+@media (min-width: 900px) {
+  .seventh .content .col {
+    height: 350px; } }
 
 @media (min-width: 320px) and (max-width: 767px) {
-  .seventh .content .row:first-child {
+  .seventh .content .row {
     margin-bottom: 0; }
+    .seventh .content .row:first-child {
+      margin-bottom: 0; }
   .seventh .content .col {
     margin-bottom: 10px;
     width: 100%; }
@@ -200,7 +103,8 @@
   .seventh .content .primary_text {
     font-size: 15px; }
   .seventh .content .secondary_text {
-    font-size: 13px; }
+    font-size: 13px;
+    line-height: 1.5; }
   .seventh .content .image {
     width: 66px;
     height: 66px; } }

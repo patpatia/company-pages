@@ -3,6 +3,11 @@
 <head>
 	<title>{{title}}</title>
 	<!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet"> -->
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
+	<link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css"
+  integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw"
+  crossorigin="anonymous">
 	{{#styles.length}}
     	{{#styles}}
     		<link rel="stylesheet" href="/{{.}}">
@@ -11,11 +16,13 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 </head>
 <body>
-<div class="header">
-	<div class="overlay"></div>
-	<img class="bg-img" src="/static/images/header_img-min.png">
-	<img class="bg-img-mobile " src="/static/images/header-image-mobile.jpg">
-	<img class="logo-img" src="/static/images/logo-min.png">
-	<!--<h1 class="">Text makes us stronger</h1>
-	<h4>Discover how our unwavering belief and commitment to our team of 425,000+ people from a variety of cultures, beliefs and backgrounds makes us stronger, smarter and more innovative.</h4> -->
-</div>
+<div class="main-wrapper">
+	<div class="header">
+		<div class="overlay"></div>
+		<img class="bg-img" src="../static/images/banner.jpg">
+		<img class="bg-img-mobile " src="../static/images/banner-mobile.jpg">
+		<img class="logo-img" src="../static/images/logo-min.png">
+		<!--<h1 class="">Text makes us stronger</h1>
+		<h4>Discover how our unwavering belief and commitment to our team of 425,000+ people from a variety of cultures, beliefs and backgrounds makes us stronger, smarter and more innovative.</h4> -->
+		<div><a href="#first_block"><i class="icon-down_arrow"></i></a></div>
+	</div>

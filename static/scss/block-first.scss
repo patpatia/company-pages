@@ -1,23 +1,28 @@
 @import 'components/_type';
 @import 'components/_colors';
 
+.main-wrapper{
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+}
+
 .first {
-    padding-top: 45px;
+    font-weight: 300;
     .content_mobile {
         display: none;
     }
     h2 {
-        text-transform: uppercase;
         &:after {
-	    	width:30%;
+	    	width:80px;
 	    	height:2px;
-	    	left:10%;
-	    	right:0;
+	    	left:50%;
+	    	transform: translateX(-50%);
 	    }
     }
     .primary_text {
-        width: 70%;
-        padding-right: 75px;
+        width: 100%;
+        //padding-right: 75px;
     }
     .image {
         width: 30%;
@@ -58,6 +63,18 @@
             font-size: 16px;
             color: $orange;
             cursor: pointer;
+            font-family: "Lato";
+            font-weight: 300;
+        }
+    }
+}
+
+@media (min-width:320px) and (max-width: 480px){
+
+    .first {
+        h2 {
+            left: 50%;
+            transform: translateX(-50%);
         }
     }
 }

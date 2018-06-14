@@ -1,15 +1,22 @@
 @import 'components/_type';
 @import 'components/_colors';
-
+// ::selection {
+//     color:red;
+// }
+// ::-moz-selection {
+//     color:red;
+// }
 .seventh {
     background-color: $bgColor;
+    position: relative;
+    //top: -40px;
+    font-weight: 300;
     h2 {
         &:after {
-	    	width:30%;
+	    	width:80px;
 	    	height:2px;
-            left:50%;
-	    	right:0;
-            transform: translate(-50%);
+	    	left:50%;
+	    	transform: translateX(-50%);
 	    }
     }
     .heading {
@@ -19,8 +26,8 @@
         text-align: center;
         font-size: 18px;
         margin: 30px 0;
-        font-family: $proxiReg;
-        line-height: 1.4;
+        font-family: "Lato";
+        line-height: 1.6;
         margin: 40px auto;
         max-width: 75%;
     }
@@ -31,9 +38,9 @@
             width: 80%;
             margin: 0 auto;
             margin-bottom: 20px;
-            // &:first-child {
-            //     margin-bottom: 20px;
-            // }
+            &:last-child {
+                margin-bottom: 0;
+            }
         }
         .col {
             display: inline-block;
@@ -44,14 +51,15 @@
             cursor: pointer;
             position: relative;
             &:hover {
-                border: 1px solid $orange;
+                // border: 1px solid $orange;
+                box-shadow: 0px 1px 6px 0px #dddddd;
                 .primary_text {
-                    color: $orange;
+                    // color: $orange;
                 }
             }
-            &:first-child {
+             &:first-child {
                 margin-right: 20px;
-            }
+             }
             a {
                 position: absolute;
                 top: 0;
@@ -66,24 +74,23 @@
             width: 76px;
             height: 76px;
             border-radius: 50%;
-            img {
-                border-radius: 50%;
-                height: 100%;
-            }
         }
         .primary_text {
             font-family: $myriadPro;
             font-size: 17px;
             color: $primaryTextColor;
             margin: 20px 0;
-            line-height: 1.4;
+            line-height: 1.6;
         }
         .secondary_text {
-            font-family: $proxiReg;
+            font-family: "Lato";
             font-size: 13px;
             color: $perksTextColor;
+            font-weight: 400;
             p {
                 min-height: 20px;
+                line-height: 1.6;
+                word-break: break-word;
             }
         }
     }
@@ -94,6 +101,24 @@
         .content {
             .row {
                 width: 100%;
+                margin-bottom: 20px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+                
+            }
+            .col{
+                height: 350px;
+            }
+        }
+    }
+}
+
+@media (min-width: 900px){
+    .seventh {
+        .content {
+            .col{
+                height: 350px;
             }
         }
     }
@@ -105,14 +130,16 @@
 
 
             .row {
+                margin-bottom: 0;
                 &:first-child {
                     margin-bottom: 0;
                 }
             }
             .col {
                 margin-bottom: 10px;
+                //height: 300px;
 
-                &:first-child {
+                 &:first-child {
                     margin-right: 0;
                 }
                 width: 100%;
@@ -131,6 +158,8 @@
             }
             .secondary_text {
                 font-size: 13px;
+                line-height: 1.5;
+
             }
             .image {
                 width: 66px;

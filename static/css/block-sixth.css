@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Comfortaa|Droid+Sans|Open+Sans:400,600,700");
 @font-face {
   font-family: "MyriadProSemibold";
@@ -8,130 +7,38 @@
   font-family: "ProximaRegular";
   src: url("/static/fonts/ProximaSansRegular Regular.ttf") format("opentype"); }
 
-@font-face {
-  font-family: 'fontello';
-  src: url("../font/fontello.eot?86898682");
-  src: url("../font/fontello.eot?86898682#iefix") format("embedded-opentype"), url("../font/fontello.woff2?86898682") format("woff2"), url("../font/fontello.woff?86898682") format("woff"), url("../font/fontello.ttf?86898682") format("truetype"), url("../font/fontello.svg?86898682#fontello") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
-/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
-/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
-/*
-  @media screen and (-webkit-min-device-pixel-ratio:0) {
-    @font-face {
-      font-family: 'fontello';
-      src: url('../font/fontello.svg?86898682#fontello') format('svg');
-    }
-  }
-  */
-[class^="icon-"]:before, [class*=" icon-"]:before {
-  font-family: "fontello";
-  font-style: normal;
-  font-weight: normal;
-  speak: none;
-  display: inline-block;
-  text-decoration: inherit;
-  width: 1em;
-  margin-right: .2em;
-  text-align: center;
-  /* opacity: .8; */
-  /* For safety - reset parent styles, that can break glyph codes*/
-  font-variant: normal;
-  text-transform: none;
-  /* fix buttons height, for twitter bootstrap */
-  line-height: 1em;
-  /* Animation center compensation - margins should be symmetric */
-  /* remove if not needed */
-  margin-left: .2em;
-  /* you can be more comfortable with increased icons size */
-  /* font-size: 120%; */
-  /* Font smoothing. That was taken from TWBS */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  /* Uncomment for 3D effect */
-  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */ }
-
-.icon-maternity:before {
-  content: '\e800'; }
-
-/* '' */
-.icon-bpo:before {
-  content: '\e801'; }
-
-/* '' */
-.icon-consulting:before {
-  content: '\e802'; }
-
-/* '' */
-.icon-hr:before {
-  content: '\e803'; }
-
-/* '' */
-.icon-legal:before {
-  content: '\e804'; }
-
-/* '' */
-.icon-returning-mothers-program:before {
-  content: '\e805'; }
-
-/* '' */
-.icon-sales:before {
-  content: '\e806'; }
-
-/* '' */
-.icon-system:before {
-  content: '\e807'; }
-
-/* '' */
-.icon-operation:before {
-  content: '\e808'; }
-
-/* '' */
-.icon-banking:before {
-  content: '\e809'; }
-
-/* '' */
-.icon-vaahini-woman-internal-network:before {
-  content: '\e80a'; }
-
-/* '' */
-.icon-adoption-and-surrogacy-leave:before {
-  content: '\e80b'; }
-
-/* '' */
-.icon-employee-assistance-program:before {
-  content: '\e80c'; }
-
-/* '' */
-.icon-flexi-policy:before {
-  content: '\e80d'; }
-
-/* '' */
-.icon-gender-diversity:before {
-  content: '\e80e'; }
-
-/* '' */
-.icon-lgbt:before {
-  content: '\e80f'; }
-
-/* '' */
 .sixth {
+  font-weight: 300;
   padding-left: 0;
   padding-right: 0;
   padding-bottom: 0; }
+  .sixth .slick-prev:before,
+  .sixth .slick-next:before {
+    font-size: 60px; }
+  .sixth .slick-prev {
+    left: 15px; }
   .sixth .heading {
     text-align: center; }
   .sixth h2:after {
-    width: 30%;
+    width: 80px;
     height: 2px;
     left: 50%;
-    right: 0;
-    transform: translate(-50%); }
+    transform: translateX(-50%); }
   .sixth .image {
     position: relative;
     margin-top: 60px;
-    width: 100%; }
+    width: 100%;
+    opacity: 1; }
+    .sixth .image#garima-story {
+      background: url("../../images/Employee-story_ Garima.jpg");
+      background-size: cover;
+      width: 100%;
+      height: 700px; }
+    .sixth .image#pooja-story {
+      background: url("../../images/Employee-story_ Pooja.jpg");
+      background-size: cover;
+      width: 100%;
+      height: 700px; }
     .sixth .image .content_wrapper {
       position: absolute;
       left: 90px;
@@ -141,112 +48,162 @@
       padding: 60px;
       background-color: #fff;
       opacity: 0.9; }
-      .sixth .image .content_wrapper .sub_heading {
-        padding: 0; }
-        .sixth .image .content_wrapper .sub_heading span {
-          color: #da491c; }
       .sixth .image .content_wrapper .primary_text {
-        padding: 20px 0; }
-      .sixth .image .content_wrapper .button {
-        display: inline-block;
-        padding: 0 20px;
-        height: 45px;
-        line-height: 45px;
-        border-radius: 20px;
-        font-size: 14px;
-        text-align: center;
-        cursor: pointer;
-        border: 1px solid #333; }
+        padding: 20px 0;
+        z-index: 1; }
+      .sixth .image .content_wrapper .name {
+        display: block;
+        font-size: 20px;
+        margin-top: 20px;
+        font-weight: 600;
+        font-family: "Lato"; }
 
-@media (min-width: 361px) and (max-width: 768px) {
-  .sixth .image {
-    position: relative;
-    margin-top: 30px;
-    width: 100%; }
-    .sixth .image .content_wrapper {
-      position: absolute;
-      left: 90px;
-      top: 15%;
-      bottom: 15%;
-      right: calc(100% - 830px);
-      padding: 60px;
-      background-color: #fff;
-      opacity: 0.9; }
-      .sixth .image .content_wrapper .sub_heading {
-        padding: 0; }
-        .sixth .image .content_wrapper .sub_heading span {
-          color: #da491c; }
-      .sixth .image .content_wrapper .primary_text {
-        padding: 20px 0; }
-      .sixth .image .content_wrapper .button {
-        display: inline-block;
-        padding: 0 20px;
-        height: 45px;
-        line-height: 45px;
-        border-radius: 20px;
-        font-size: 14px;
-        text-align: center;
-        cursor: pointer;
-        border: 1px solid #333; } }
+@media (min-width: 320px) and (max-width: 767px) {
+  .sixth .image .content_wrapper {
+    position: absolute;
+    left: 20px;
+    top: 15%;
+    bottom: 15%;
+    right: 20px;
+    background-color: #fff;
+    opacity: 0.9;
+    height: fit-content;
+    padding: 20px 10px; }
+    .sixth .image .content_wrapper .primary_text {
+      padding: 20px; }
+    .sixth .image .content_wrapper .name {
+      display: block;
+      font-size: 25px;
+      margin-top: 20px;
+      font-family: "Lato";
+      font-weight: 600; } }
 
-@media (min-width: 481px) and (max-width: 767px) {
-  .sixth .slides .quotes-img {
-    width: 74px;
-    top: 71px; }
-  .sixth .slides .profile-img {
-    top: 75px;
-    width: 100px;
-    height: 102px; }
-  .sixth .slides .content_wrapper {
-    padding-top: 85px; } }
+@media (min-width: 768px) and (max-width: 960px) {
+  .sixth .slick-prev {
+    left: 7px; }
+  .sixth .slick-next {
+    right: 40px; }
+  .sixth .image .content_wrapper {
+    position: absolute;
+    left: 50px;
+    top: 15%;
+    bottom: 15%;
+    right: calc(100% - 80%);
+    padding: 60px;
+    background-color: white;
+    opacity: 0.9; }
+    .sixth .image .content_wrapper .primary_text {
+      padding: 20px 0; }
+    .sixth .image .content_wrapper .name {
+      display: block;
+      font-size: 20px;
+      margin-top: 20px;
+      font-weight: 600;
+      font-family: "Lato"; } }
 
-@media (min-width: 361px) and (max-width: 480px) {
-  .sixth .slides .content_wrapper {
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 65px; }
-  .sixth .slides .quotes-img {
-    width: 54px;
-    top: 86px;
-    left: 20px; }
-  .sixth .slides .profile-img {
-    top: 80px;
-    width: 85px;
-    height: 87px; } }
-
-@media (min-width: 320px) and (max-width: 360px) {
+@media (min-width: 320px) and (max-width: 480px) {
   .sixth .slick-prev {
     left: 0px; }
   .sixth .slick-next {
     right: 0px; }
+  .sixth .slick-prev:before,
+  .sixth .slick-next:before {
+    font-size: 30px; }
   .sixth .image {
     position: relative;
     margin-top: 30px;
     width: 100%;
-    background-size: cover; }
+    background-size: cover;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-repeat: no-repeat;
+    background-position: left; }
     .sixth .image .content_wrapper {
-      position: absolute;
-      left: 20px;
-      top: 15%;
-      bottom: 15%;
-      right: calc(100% - 830px);
-      padding: 60px;
-      background-color: #fff;
-      opacity: 0.9;
-      padding: 20px 10px; }
-      .sixth .image .content_wrapper .sub_heading {
-        padding: 0; }
-        .sixth .image .content_wrapper .sub_heading span {
-          color: #da491c; }
+      top: 5%; }
       .sixth .image .content_wrapper .primary_text {
-        padding: 20px 0; }
-      .sixth .image .content_wrapper .button {
-        display: inline-block;
-        padding: 0 20px;
-        height: 45px;
-        line-height: 45px;
-        border-radius: 20px;
-        font-size: 14px;
-        text-align: center;
-        cursor: pointer;
-        border: 1px solid #333; } }
+        padding: 20px; }
+      .sixth .image .content_wrapper .name {
+        display: block;
+        font-size: 15px;
+        margin-top: 20px;
+        font-family: "Lato";
+        padding: 0 15px;
+        font-weight: 600; } }
+
+@media (min-width: 320px) and (max-width: 359px) {
+  .sixth .image#garima-story {
+    height: 900px;
+    position: relative;
+    background-position-x: -45%; }
+  .sixth .image#pooja-story {
+    height: 900px;
+    position: relative;
+    background-position-x: -45%; } }
+
+@media (min-width: 360px) and (max-width: 480px) {
+  .sixth .image#garima-story {
+    height: 800px;
+    position: relative;
+    background-position-x: -55%; }
+  .sixth .image#pooja-story {
+    height: 800px;
+    position: relative;
+    background-position-x: -55%; } }
+
+@media (min-width: 480px) and (max-width: 547px) {
+  .sixth .slick-prev {
+    left: -5px; }
+  .sixth .slick-next {
+    right: 5px; }
+  .sixth .slick-prev:before,
+  .sixth .slick-next:before {
+    font-size: 40px; }
+  .sixth .image#garima-story {
+    height: 800px;
+    position: relative;
+    background-position-x: -70%; }
+  .sixth .image#pooja-story {
+    height: 800px;
+    position: relative;
+    background-position-x: -70%; } }
+
+@media (min-width: 548px) and (max-width: 767px) {
+  .sixth .slick-prev {
+    left: -12px; }
+  .sixth .slick-next {
+    right: 9px; }
+  .sixth .slick-prev:before,
+  .sixth .slick-next:before {
+    font-size: 50px; }
+  .sixth .image#garima-story {
+    height: 600px;
+    position: relative;
+    background-position-x: 60%; }
+  .sixth .image#pooja-story {
+    height: 600px;
+    position: relative;
+    background-position-x: 60%; }
+  .sixth .image .content_wrapper {
+    top: 10%; } }
+
+@media (min-width: 768px) and (max-width: 960px) {
+  .sixth .slick-prev {
+    left: -12px; }
+  .sixth .slick-next {
+    right: 9px; }
+  .sixth .slick-prev:before,
+  .sixth .slick-next:before {
+    font-size: 50px; }
+  .sixth .image#garima-story {
+    height: 830px;
+    position: relative;
+    background-position-x: 60%; }
+  .sixth .image#pooja-story {
+    height: 830px;
+    position: relative;
+    background-position-x: 60%; }
+  .sixth .image .content_wrapper {
+    top: 10%; } }

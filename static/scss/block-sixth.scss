@@ -3,26 +3,62 @@
 
 
 .sixth {
+    font-weight: 300;
     padding-left: 0;
     padding-right: 0;
     padding-bottom: 0;
+
+    .slick-prev:before,
+    .slick-next:before{
+        font-size: 60px;
+    }
+
+    .slick-prev{
+        left: 15px;
+        // &:before{
+        //     //left: -15px;
+        // }
+    }
+    // .slick-next{
+    //     //left: 15px;
+    //     &:before{
+    //         //left: -15px;
+    //     }
+    // }
+
     .heading {
         text-align: center;
     }
     h2 {
         &:after {
-	    	width:30%;
+	    	width:80px;
 	    	height:2px;
-            left:50%;
-	    	right:0;
-            transform: translate(-50%);
+	    	left:50%;
+	    	transform: translateX(-50%);
 	    }
     }
     .image {
         position: relative;
         margin-top: 60px;
         width: 100%;
-        //background: url("../images/Employee-story_ Garima.png");
+        opacity: 1;
+        //background: url("../images/Employee-story_ Garima.jpg");
+        &#garima-story{
+            background: url("../../images/Employee-story_ Garima.jpg");
+            background-size: cover;
+            // opacity: 1;
+            width: 100%;
+            // height: fit-content;
+            height: 700px;
+        }
+        &#pooja-story{
+            background: url("../../images/Employee-story_ Pooja.jpg");
+            background-size: cover; 
+            // opacity: 1;
+            width: 100%;
+            // height: fit-content;
+            height: 700px;
+        }
         .content_wrapper {
             position: absolute;
             left: 90px;
@@ -32,200 +68,440 @@
             padding: 60px;
             background-color: #fff;
             opacity: 0.9;
-            .sub_heading {
-                padding: 0;
-                span {
-                    color: $orange;
-                }
-            }
+            
+            // .sub_heading {
+            //     padding: 0;
+            //     span {
+            //         color: $orange;
+            //     }
+            // }
             .primary_text {
                 padding: 20px 0;
+                z-index: 1;
             }
-            .button {
-                display: inline-block;
-                padding: 0 20px;
-                height: 45px;
-                line-height: 45px;
-                border-radius: 20px;
-                font-size: $buttonSize;
-                text-align: center;
-                cursor: pointer;
-                border: 1px solid #333;
+            // .button {
+            //     display: inline-block;
+            //     padding: 0 20px;
+            //     height: 45px;
+            //     line-height: 45px;
+            //     border-radius: 20px;
+            //     font-size: $buttonSize;
+            //     text-align: center;
+            //     cursor: pointer;
+            //     border: 1px solid #333;
+            // }
+            .name{
+                display: block;
+                font-size: 20px;
+                margin-top: 20px;
+                font-weight: 600;
+
+                font-family: "Lato";
             }
+
+
         }
     }
 }      
 
 
-@media (min-width: 361px) and (max-width: 768px) {
-    .sixth {
-        // .slides {
-        //     margin: 0px 10px;
-        //     padding: 0 10px;
-        // }
-        .image {
-            position: relative;
-            margin-top: 30px;
-            width: 100%;
+// @media (min-width: 361px) and (max-width: 768px) {
+//     .sixth {
+//         // .slides {
+//         //     margin: 0px 10px;
+//         //     padding: 0 10px;
+//         // }
+//         .image {
+//             position: relative;
+//             margin-top: 30px;
+//             width: 100%;
+//             .content_wrapper {
+//                 position: absolute;
+//                 left: 90px;
+//                 top: 15%;
+//                 bottom: 15%;
+//                 right: calc(100% - 830px);
+//                 padding: 60px;
+//                 background-color: #fff;
+//                 opacity: 0.9;
+//                 .sub_heading {
+//                     padding: 0;
+//                     span {
+//                         color: $orange;
+//                     }
+//                 }
+//                 .primary_text {
+//                     padding: 20px 0;
+//                 }
+//                 .button {
+//                     display: inline-block;
+//                     padding: 0 20px;
+//                     height: 45px;
+//                     line-height: 45px;
+//                     border-radius: 20px;
+//                     font-size: $buttonSize;
+//                     text-align: center;
+//                     cursor: pointer;
+//                     border: 1px solid #333;
+//                 }
+//             }
+//         }   
+//     }
+// }
+
+@media (min-width: 320px) and (max-width: 767px){
+    .sixth{
+        .image{
             .content_wrapper {
                 position: absolute;
-                left: 90px;
+                left: 20px;
                 top: 15%;
                 bottom: 15%;
-                right: calc(100% - 830px);
-                padding: 60px;
+                right: 20px;
                 background-color: #fff;
                 opacity: 0.9;
-                .sub_heading {
-                    padding: 0;
-                    span {
-                        color: $orange;
-                    }
-                }
+                height: fit-content;
+                padding: 20px 10px;
+                
+                // .sub_heading {
+                //     padding: 0 10px;
+                //     span {
+                //         color: $orange;
+                //     }
+                // }
                 .primary_text {
-                    padding: 20px 0;
+                    padding: 20px;
                 }
-                .button {
-                    display: inline-block;
-                    padding: 0 20px;
-                    height: 45px;
-                    line-height: 45px;
-                    border-radius: 20px;
-                    font-size: $buttonSize;
-                    text-align: center;
-                    cursor: pointer;
-                    border: 1px solid #333;
+                // .button {
+                //     display: inline-block;
+                //     padding: 0 20px;
+                //     height: 45px;
+                //     line-height: 45px;
+                //     border-radius: 20px;
+                //     font-size: $buttonSize;
+                //     text-align: center;
+                //     cursor: pointer;
+                //     border: 1px solid #333;
+                // }
+                .name{
+                    display: block;
+                    font-size: 25px;
+                    margin-top: 20px;
+                    font-family: "Lato";
+                    font-weight: 600;
                 }
             }
-        }   
+        }
     }
 }
 
-@media (min-width: 481px) and (max-width: 767px) {
-
-    .sixth {
-        .slides {
-
-            .quotes-img {
-                width: 74px;
-                top: 71px;
-            }
-            .profile-img {
-                top: 75px;
-                width: 100px;
-                height: 102px;
-            }
+@media(min-width: 768px) and (max-width: 960px){
+    .sixth{
+        .slick-prev {
+            left: 7px;
+            
+        }
+        .slick-next {
+            right: 40px; 
+        }
+        .image{
             .content_wrapper {
-
-                padding-top: 85px;
-
+                position: absolute;
+               left: 50px;
+               top: 15%;
+               bottom: 15%;
+               right: calc(100% - 80%);
+               padding: 60px;
+               background-color: rgb(255, 255, 255);
+               opacity: 0.9;
+               
+            //    .sub_heading {
+            //        padding: 0;
+            //        span {
+            //            color: $orange;
+            //        }
+            //    }
+               .primary_text {
+                   padding: 20px 0;
+               }
+            //    .button {
+            //        display: inline-block;
+            //        padding: 0 20px;
+            //        height: 45px;
+            //        line-height: 45px;
+            //        border-radius: 20px;
+            //        font-size: $buttonSize;
+            //        text-align: center;
+            //        cursor: pointer;
+            //        border: 1px solid #333;
+            //    }
+            .name{
+                display: block;
+                font-size: 20px;
+                margin-top: 20px;
+                font-weight: 600;
+                font-family: "Lato";
             }
+           }
         }
     }
 
 }
 
-@media (min-width: 361px) and (max-width: 480px) {
+
+@media (min-width: 320px) and (max-width: 480px) {
 
     .sixth {
-        .slides {
-
-            .content_wrapper {
-                padding-left: 20px;
-                padding-right: 20px;
-                padding-top: 65px;
-            }
-
-            .quotes-img {
-                width: 54px;
-                top: 86px;
-                left: 20px;
-            }
-            .profile-img {
-                top: 80px;
-                width: 85px;
-                height: 87px;
-            }
-        }
-    }
-
-}
-
-@media (min-width: 320px) and (max-width: 360px) {
-
-    .sixth {
-        // .slides {
-
-        //     .content_wrapper {
-        //         padding-left: 5px;
-        //         padding-right: 5px;
-        //         padding-top: 45px;
-        //     }
-
-        //     .quotes-img {
-        //         width: 34px;
-        //         top: 100px;
-        //         left: 10px;
-        //     }
-        //     .profile-img {
-        //         top: 90px;
-        //         width: 60px;
-        //         height: 62px;
-        //     }
-        //     .primary_text {
-        //         font-size: 12px;
-        //     }
-        // }
 
         .slick-prev {
             left: 0px;
+
         }
         .slick-next {
             right: 0px; 
+        }
+        .slick-prev:before,
+        .slick-next:before{
+            font-size: 30px;
         }
         .image {
             position: relative;
             margin-top: 30px;
             width: 100%;
             background-size: cover;
-            .content_wrapper {
-                position: absolute;
-                left: 20px;
-                top: 15%;
-                bottom: 15%;
-                right: calc(100% - 830px);
-                padding: 60px;
-                background-color: #fff;
-                opacity: 0.9;
 
-                // .heading {
-                //     padding: 0 10px;
-                // }
+            width: 100%;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                background-repeat: no-repeat;
+                background-position: left;
+
+            // &#garima-story{
+            //     height: 900px;
+            //     // height: fit-content;
+            //     //width: 50%;
+            //     position: relative;
+            //     background-position-x: -45%;
+            //     // opacity: .5;
                 
-                padding: 20px 10px;
-                
-                .sub_heading {
-                    padding: 0;
-                    span {
-                        color: $orange;
-                    }
-                }
+            // }
+            // &#pooja-story{
+            //     height: 900px;
+            //     //height: fit-content;
+            //     position: relative;
+            //     background-position-x: -45%;
+            // }
+            .content_wrapper {
+                top: 5%;
                 .primary_text {
-                    padding: 20px 0;
+                    padding: 20px;
                 }
-                .button {
-                    display: inline-block;
-                    padding: 0 20px;
-                    height: 45px;
-                    line-height: 45px;
-                    border-radius: 20px;
-                    font-size: $buttonSize;
-                    text-align: center;
-                    cursor: pointer;
-                    border: 1px solid #333;
+                .name{
+                    display: block;
+                    font-size: 15px;
+                    margin-top: 20px;
+                    font-family: "Lato";
+                    padding: 0 15px;
+                    font-weight: 600;
                 }
+            }
+            
+        }  
+    }
+
+}
+
+@media (min-width: 320px) and (max-width: 359px) {
+    .sixth{
+        .image{
+            &#garima-story{
+                height: 900px;
+                // height: fit-content;
+                //width: 50%;
+                position: relative;
+                background-position-x: -45%;
+                // opacity: .5;
+                
+            }
+            &#pooja-story{
+                height: 900px;
+                //height: fit-content;
+                position: relative;
+                background-position-x: -45%;
+            }
+        }
+    }
+}
+
+@media (min-width: 360px) and (max-width: 480px) {
+    .sixth{
+        .image{
+            &#garima-story{
+                height: 800px;
+                // height: fit-content;
+                //width: 50%;
+                position: relative;
+                background-position-x: -55%;
+                // opacity: .5;
+                
+            }
+            &#pooja-story{
+                height: 800px;
+                //height: fit-content;
+                position: relative;
+                background-position-x: -55%;
+            }
+        }
+    }
+
+}
+
+// @media (min-width: 481px) and (max-width: 768px){
+    
+//     .sixth{
+//         .slick-prev {
+//             left: -5px;
+    
+//         }
+//         .slick-next {
+//             right: 5px; 
+//         }
+//         .slick-prev:before,
+//         .slick-next:before{
+//             font-size: 40px;
+//         }
+//         .image{
+//             &#garima-story{
+//                 height: 800px;
+//                 // height: fit-content;
+//                 //width: 50%;
+//                 position: relative;
+//                 background-position-x: -55%;
+//                 // opacity: .5;
+                
+//             }
+//             &#pooja-story{
+//                 height: 800px;
+//                 //height: fit-content;
+//                 position: relative;
+//                 background-position-x: -55%;
+//             }
+//         }
+//     }
+// }
+
+
+@media (min-width: 480px) and (max-width: 547px) {
+    .sixth {
+
+        .slick-prev {
+            left: -5px;
+    
+        }
+        .slick-next {
+            right: 5px; 
+        }
+        .slick-prev:before,
+        .slick-next:before{
+            font-size: 40px;
+        }
+        .image {
+
+            &#garima-story{
+                 height: 800px;
+                position: relative;
+                background-position-x: -70%;
+                
+            }
+            &#pooja-story{
+                height: 800px;
+                position: relative;
+                background-position-x: -70%;
             }
         }  
     }
 
 }
+
+@media (min-width: 548px) and (max-width: 767px) {
+
+    .sixth {
+        .slick-prev {
+            left: -12px;
+            // left: 0;
+    
+        }
+        .slick-next {
+            right: 9px; 
+            // right: 0;
+        }
+        .slick-prev:before,
+        .slick-next:before{
+            font-size: 50px;
+        }
+
+        .image {
+            &#garima-story{
+                 height: 600px;
+                position: relative;
+                background-position-x: 60%;
+                
+            }
+            &#pooja-story{
+                height: 600px;
+                position: relative;
+                background-position-x: 60%;
+            }
+            .content_wrapper {
+                top: 10%;
+            }
+        } 
+         
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 960px) {
+
+    .sixth {
+        .slick-prev {
+            left: -12px;
+            // left: 0;
+    
+        }
+        .slick-next {
+            right: 9px; 
+            // right: 0;
+        }
+        .slick-prev:before,
+        .slick-next:before{
+            font-size: 50px;
+        }
+
+        .image {
+            &#garima-story{
+                 height: 830px;
+                position: relative;
+                background-position-x: 60%;
+                
+            }
+            &#pooja-story{
+                height: 830px;
+                position: relative;
+                background-position-x: 60%;
+            }
+            .content_wrapper {
+                top: 10%;
+            }
+        } 
+         
+    }
+
+}
+
+
+
+
+

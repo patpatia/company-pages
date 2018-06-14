@@ -2,29 +2,67 @@
 @import 'components/_colors';
 
 .fourth {
-    //font-family: "ProximaRegular";
+    font-weight: 300;
+
     .slider_fourth_mobile {
         display: none;
     }
+
     position: relative;
-    .image {
+    .image_left{
+        // position: absolute;
+        // top: 0;
+        // left: 0;
+        // width: 25%;
+        // height: 25%;
+        // z-index: -1;
         position: absolute;
-        top: 0;
-        left: 0;
-        width: 25%;
-        height: 25%;
-        z-index: -1;
+            top: 0px;
+            left: 0px;
+            // width: 220px;
+            // height: 220px;
+            z-index: -1;
         img {
-            max-width: 100%;
-            width: auto;
+            // max-width: 100%;
+            // width: auto;
+            width: 220px;
+            height: 220px;
+            
+        }
+    }
+    .image_right{
+            //float: right;
+            //position: absolute;
+            // bottom: -89px;
+            // right: -684px;
+            // width: 70%;
+            // height: 70%;
+            // z-index: -1;
+            // bottom: 0px;
+            // right: 0px;
+            // // width: 70%;
+            // // height: 70%;
+            // z-index: -1;
+        img {
+            // max-width: 100%;
+            // width: auto;
+            bottom: 0px;
+            right: 0px;
+            width: 220px;
+            height: 220px;
+
+            z-index: -1;
+            position: absolute;
+            
         }
     }
     h2 {
         &:after {
-	    	width:30%;
-	    	height:2px;
-            left: 25%;
-	    }
+            width:80px;
+            height:2px;
+            left:50%;
+            transform: translateX(-50%);
+        }
     }
     .content_wrapper {
         .primary_text {
@@ -32,45 +70,78 @@
             padding-right: 75px;
         }
     }
-        .col_container:first-child {
-            padding-bottom: 50px;
+    .col_container:first-child {
+        padding-bottom: 50px;
+    }
+    .col_container:nth-child(2) {
+        padding-bottom: 30px;
+    }
+
+    .col_container {
+        .col {
+            padding-right: 50px;
         }
+    }
+    
+    .col {
 
-        .col_container {
-            .col {
-                padding-right: 50px;
-            }
+        .heading {
+            font-family: "Lato";
+            font-size: $perksHeadingSize;
+            padding: 15px 0;
+            color: $secondaryText;
+            font-weight: 300;
+            line-height: 1.6;
         }
-            .col {
+        // .text {
+        //     font-family: "Lato";
+        //     font-size: $perksContent;
+        //     line-height: 1.4;
+        //     color: $perksTextColor;
+        // }
+    }
 
-                .heading {
-                    font-family: "ProximaRegular";
-                    font-size: $perksHeadingSize;
-                    padding: 15px 0;
-                    color: $secondaryText;
-                }
-                .text {
-                    font-family: "ProximaRegular";
-                    font-size: $perksContent;
-                    line-height: 1.4;
-                    color: $perksTextColor;
-                }
-            }
-
-            .slick-dots {
-                text-align: left;
-                left: -10px;
-                bottom: -30px;
-            }
-            .slick-arrow {
-                display: none !important;
-            }
+    .slick-dots {
+        text-align: left;
+        left: -6px;
+        bottom: -7px;
+    }
+    .slick-arrow {
+        display: none !important;
+    }   
 }
 
 
 @media (min-width: 320px) and (max-width: 767px) {
 
     .fourth {
+
+        .image_left{
+            position: absolute;
+                top: 0px;
+                left: 0px;
+                z-index: -1;
+            img {     
+                width: 130px;
+                height: 130px;    
+            }
+        }
+        .image_right{
+                bottom: 0px;
+                right: 0px;
+                
+                z-index: -1;
+            img {
+                bottom: 0px;
+                right: 0px;
+                width: 130px;
+                height: 130px;
+    
+                z-index: -1;
+                position: absolute;
+                
+            }
+        }
 
         .col_container {
             padding-bottom: 0 !important;
@@ -92,15 +163,28 @@
 
         .slick-dots {
             text-align: center;
+            font-size: 30px;
         }
 
         .col_container {
             .col {
                 padding-right: 15px;
+                padding-bottom: 15px;
             }
         }
     }
 
 
 
+}
+
+
+@media (min-width:320px) and (max-width: 480px){
+
+    .fourth {
+        h2 {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
 }

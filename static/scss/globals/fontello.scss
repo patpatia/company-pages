@@ -1,25 +1,3 @@
-@font-face {
-  font-family: 'fontello';
-  src: url('../../fonts/fontello.eot');
-  src: url('../../fonts/fontello.eot#iefix') format('embedded-opentype'),
-       url('../../fonts/fontello.woff2') format('woff2'),
-       url('../../fonts/fontello.woff') format('woff'),
-       url('../../fonts/fontello.ttf') format('truetype'),
-       url('../../fonts/fontello.svg#fontello') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
-/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
-/*
-@media screen and (-webkit-min-device-pixel-ratio:0) {
-  @font-face {
-    font-family: 'fontello';
-    src: url('../font/fontello.svg?66036068#fontello') format('svg');
-  }
-}
-*/
- 
  [class^="icon-"]:before, [class*=" icon-"]:before {
   font-family: "fontello";
   font-style: normal;
@@ -29,7 +7,7 @@
   display: inline-block;
   text-decoration: inherit;
   width: 1em;
-  margin-right: .2em;
+  // margin-right: .2em;
   text-align: center;
   /* opacity: .8; */
  
@@ -42,7 +20,7 @@
  
   /* Animation center compensation - margins should be symmetric */
   /* remove if not needed */
-  margin-left: .2em;
+  // margin-left: .2em;
  
   /* you can be more comfortable with increased icons size */
   /* font-size: 120%; */
@@ -53,24 +31,101 @@
  
   /* Uncomment for 3D effect */
   /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+  color: #fff;
+  background: #008ec5;
+  border-radius: 100px;
+  padding: 10px;
+  font-size: 40px;
+
+
 }
- 
-.icon-cancel:before { content: '\e800'; } /* '' */
-.icon-search:before { content: '\e801'; } /* '' */
-.icon-menu:before { content: '\e802'; } /* '' */
-.icon-ok:before { content: '\e803'; } /* '' */
-.icon-up:before { content: '\e804'; } /* '' */
-.icon-down:before { content: '\e805'; } /* '' */
-.icon-mail:before { content: '\e806'; } /* '' */
-.icon-birthday:before { content: '\e807'; } /* '' */
-.icon-right:before { content: '\e808'; } /* '' */
-.icon-left:before { content: '\e809'; } /* '' */
-.icon-calendar:before { content: '\e80a'; } /* '' */
-.icon-company_updates:before { content: '\e80b'; } /* '' */
-.icon-dashboard:before { content: '\e80c'; } /* '' */
-.icon-my_alumni:before { content: '\e80d'; } /* '' */
-.icon-new_articles:before { content: '\e80e'; } /* '' */
-.icon-location:before { content: '\f031'; } /* '' */
-.icon-filter:before { content: '\f0b0'; } /* '' */
-.icon-calendar-empty:before { content: '\f133'; } /* '' */
-.icon-dot-3:before { content: '\e80f'; } /* '' */
+
+.icon-facebook2:before,
+.icon-twitter2:before,
+.icon-linkedin2:before,
+.icon-youtube2:before,
+.icon-home2:before,{
+  background: #3D3D3D;
+  padding: 0;
+  border-radius: 0;
+  font-size: 70px;
+}
+
+
+.icon-vaahini-woman-internal-network:before,
+.icon-family:before,
+.icon-employe:before,
+.icon-flexi-policy:before,
+.icon-gender-diversity:before,
+.icon-lgbt:before,
+.icon-returning-mothers-program:before,
+.icon-maternity:before{
+  color: #da491c;
+  background: #fff;
+  padding: 0;
+  border-radius: 0;
+}
+.icon-down_arrow:before{
+  color: #fff;
+  background: #000;
+  border-radius: 100px;
+  padding: 10px;
+  font-size: 15px;
+}
+
+.icon-facebook2:hover:before{
+  color: #678de3;
+  // border-radius: 100px;
+  // padding: 0;
+}
+.icon-twitter2:hover:before{
+  color: #5cb2ee;
+}
+.icon-linkedin2:hover:before{
+  color: #0274b3;
+}
+.icon-youtube2:hover:before{
+  color: #df2926;
+}
+.icon-home2:hover:before{
+  color: #676565;
+}
+
+.icon-left_comma:before,
+.icon-right_comma:before{
+  color: #da491c;
+  background: #fff;
+  padding: 0;
+  border-radius: 0;
+  font-size: 27px;
+}
+
+.icon-home2:before { content: '\e801'; } /* '' */
+.icon-left-arrow:before { content: '\e802'; } /* '' */
+.icon-lgbt:before { content: '\e803'; } /* '' */
+.icon-twitter2:before { content: '\e805'; } /* '' */
+.icon-youtube2:before { content: '\e806'; } /* '' */
+.icon-facebook2:before { content: '\e809'; } /* '' */
+.icon-right-arrow:before { content: '\e80b'; } /* '' */
+.icon-maternity:before { content: '\e80c'; } /* '' */
+.icon-vaahini-woman-internal-network:before { content: '\e80d'; } /* '' */
+.icon-android:before { content: '\e80e'; } /* '' */
+.icon-apple:before { content: '\e80f'; } /* '' */
+.icon-linkedin2:before { content: '\e811'; } /* '' */
+.icon-google-plus2:before { content: '\e812'; } /* '' */
+.icon-employe:before { content: '\e814'; } /* '' */
+.icon-family:before { content: '\e815'; } /* '' */
+.icon-returning-mothers-program:before { content: '\e816'; } /* '' */
+.icon-flexi-policy:before { content: '\e818'; } /* '' */
+.icon-gender-diversity:before { content: '\e819'; } /* '' */
+.icon-legal:before { content: '\e81a'; } /* '' */
+.icon-operation:before { content: '\e81b'; } /* '' */
+.icon-sales:before { content: '\e81c'; } /* '' */
+.icon-system:before { content: '\e81d'; } /* '' */
+.icon-banking:before { content: '\e81e'; } /* '' */
+.icon-bpo:before { content: '\e81f'; } /* '' */
+.icon-consulting:before { content: '\e820'; } /* '' */
+.icon-hr:before { content: '\e821'; } /* '' */
+.icon-left_comma:before { content: '\e822'; } /* '' */
+.icon-right_comma:before { content: '\e823'; } /* '' */
+.icon-down_arrow:before { content: '\e824'; } /* '' */
