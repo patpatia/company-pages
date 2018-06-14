@@ -8,6 +8,10 @@
         display: none;
     }
 
+    .content-rel {
+        position: relative;
+    }
+
     background-color: $bgColor;
 
     h2 {
@@ -26,9 +30,8 @@
     .content {
         padding: 50px 0;
         margin-top: 0;
-        
         border-bottom: 1px solid #e2e2e2;
-        &:nth-child(6) {
+        &:nth-child(4) {
             border-bottom:0;
             padding-bottom: 0;
         }
@@ -38,10 +41,25 @@
         width: 70%;
         vertical-align: middle;
         display: inline-block;
+        position: relative;
+
         &:nth-child(3) {
             .image {
                 text-align: right;
             }
+        }
+        .primary_text {
+            height: 90px;
+            overflow: hidden;
+        }
+        .readMoreinit {
+            position: absolute;
+            bottom: -25px;
+            left: 50%;
+            transform: translate(-50%);
+            font-size: 14px;
+            color: #da491c;
+            cursor: pointer;
         }
     }
 
@@ -97,6 +115,15 @@
             padding-bottom: 40px;
             .sub_heading {
                 padding: 0 0 20px 0;
+            }
+            .readMoreinit {
+                position: absolute;
+                bottom: 15px;
+                left: 50%;
+                transform: translate(-50%);
+                font-size: 14px;
+                color: #da491c;
+                cursor: pointer;
             }
         }
     }

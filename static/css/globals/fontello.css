@@ -1,8 +1,8 @@
 @charset "UTF-8";
 @font-face {
   font-family: 'fontello';
-  src: url("../../fonts/fontello_wns.eot");
-  src: url("../../fonts/fontello_wns.eot#iefix") format("embedded-opentype"), url("../../fonts/fontello_wns.woff2") format("woff2"), url("../../fonts/fontello_wns.woff") format("woff"), url("../../fonts/fontello_wns.ttf") format("truetype"), url("../../fonts/fontello_wns.svg#fontello") format("svg");
+  src: url("../../fonts/fontello.eot");
+  src: url("../../fonts/fontello.eot#iefix") format("embedded-opentype"), url("../../fonts/fontello.woff2") format("woff2"), url("../../fonts/fontello.woff") format("woff"), url("../../fonts/fontello.ttf") format("truetype"), url("../../fonts/fontello.svg#fontello") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -164,16 +164,43 @@
   content: '\e80a'; }
 
 .icon-facebook2::before {
-  content: '\e80d'; }
+  content: '\e813'; }
 
 .icon-twitter2::before {
-  content: '\e811'; }
+  content: '\e816'; }
 
 .icon-linkedin2::before {
-  content: '\e810'; }
+  content: '\e815'; }
 
 .icon-home2::before {
   content: '\e80f'; }
+
+.icon-youtube2::before {
+  content: '\e812'; }
+
+.icon-google-plus2::before {
+  content: '\e812'; }
+
+.icon-child::before {
+  content: '\e809'; }
+
+.icon-flexible-work-arrangements::before {
+  content: '\e800'; }
+
+.icon-workshop--posh--unconscious-bias::before {
+  content: '\e801'; }
+
+.icon-new-family-policy::before {
+  content: '\e802'; }
+
+.icon-women-mentorship-program::before {
+  content: '\e805'; }
+
+.icon-parking::before {
+  content: '\e807'; }
+
+.icon-room-\&-infrastructure-for-lactating-mothers::before {
+  content: '\e808'; }
 
 .icon-facebook2:hover:before {
   color: #678de3; }
@@ -187,10 +214,15 @@
 .icon-home2:hover:before {
   color: #676565; }
 
+.icon-youtube2:hover:before {
+  color: #f00; }
+
 .icon-facebook2:before,
 .icon-twitter2:before,
 .icon-linkedin2:before,
-.icon-home2:before {
+.icon-youtube2:before,
+.icon-home2:before,
+.icon-google-plus2:before {
   background: #3D3D3D;
   padding: 0;
   border-radius: 0;

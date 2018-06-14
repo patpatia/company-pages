@@ -43,6 +43,14 @@
     width: 100%;
 }
 
+.bold-6 {
+    font-weight: 600;
+}
+
+.bold-7 {
+    font-weight: 700;
+}
+
 .block {
     padding: 60px 90px;
     font-size: 0;
@@ -82,13 +90,13 @@
     .primary_text {
         line-height: $primaryTextLineHeight;
         font-size: $primaryTextSize;
-        font-family: $proxiReg;
+        font-family: $openSans;
         color: $primaryTextColor;
     }
 
     .sub_heading {
         color: #000;
-        font-family: $myriadPro;
+        font-family: $openSans;
         font-size: 25px;
         padding: 20px 0;
         line-height: 1.4;

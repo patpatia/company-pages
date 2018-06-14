@@ -1,43 +1,38 @@
 {
     "perkList": [
         {
-            "categoryIcon": "icon-pregancy_care",
-            "title": "Maternity Benefit in Mediclaim Polic",
+            "categoryIcon": "icon-child",
+            "title": "Child Care Policy",
+            "description": "The policy extends to all permanent women employees in GSK, it supports crèche facility for their children"
+        },
+        {
+            "categoryIcon": "icon-new-family-policy",
+            "title": "New Parent policy",
             "description": "Post-delivery medical benefits to all WNS Employees"
         },
         {
-            "categoryIcon": "icon-pregancy_care",
-            "title": "Maternity Benefit in Mediclaim Policy",
+            "categoryIcon": "icon-parking",
+            "title": "Reserved Parking Space  for Pregnant Women",
             "description": "Post-delivery medical benefits to all WNS Employees"
         },
         {
-            "categoryIcon": "icon-pregancy_care",
-            "title": "Maternity Benefit in Mediclaim Poly",
+            "categoryIcon": "icon-room-&-infrastructure-for-lactating-mothers",
+            "title": "Room & Infrastructure for Lactating Mothers",
             "description": "Post-delivery medical benefits to all WNS Employees"
         },
         {
-            "categoryIcon": "icon-pregancy_care",
-            "title": "Maternity Benefit in Mediclaim Policy",
+            "categoryIcon": "icon-women-mentorship-program",
+            "title": "Women Mentorship Program",
             "description": "Post-delivery medical benefits to all WNS Employees"
         },
         {
-            "categoryIcon": "icon-pregancy_care",
-            "title": "Maternity Benefit in Mediclaim Policy",
+            "categoryIcon": "icon-flexible-work-arrangements",
+            "title": "Flexible Work arrangements",
             "description": "Post-delivery medical benefits to all WNS Employees"
         },
         {
-            "categoryIcon": "icon-pregancy_care",
-            "title": "Maternity Benefit in Mediclaim Policy",
-            "description": "Post-delivery medical benefits to all WNS Employees"
-        },
-        {
-            "categoryIcon": "icon-pregancy_care",
-            "title": "Maternity Benefit in Mediclaim Policy",
-            "description": "Post-delivery medical benefits to all WNS Employees"
-        },
-        {
-            "categoryIcon": "icon-pregancy_care",
-            "title": "Maternity Benefit in Mediclaim Policy",
+            "categoryIcon": "icon-workshop--posh--unconscious-bias",
+            "title": "Workshop : POSH | Unconscious Bias",
             "description": "Post-delivery medical benefits to all WNS Employees"
         }
     ]

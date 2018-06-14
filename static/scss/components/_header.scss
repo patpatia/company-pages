@@ -22,7 +22,7 @@
         position: absolute;
         top: 25px;
         left: 30px;
-        width: 150px;
+        width: 95px;
     }
 
     img {
@@ -33,17 +33,16 @@
 
     h1 {
         position: absolute;
-        top: 40%;
+        top: 50%;
         left: 50%;
         transform: translate(-50%,-40%);
         text-align: center;
-        width: 100%;
-        font-size: 52px;
+        width: 80%;
+        font-size: 38px;
         color: #fff;
-        max-width: 650px;
-        font-family: $myriadPro;
+        font-family: $openSans;
         font-weight: bold;
-        padding: 0 10px;
+        line-height: 50px;
         &:after {
             content: '';
             display: block;
@@ -52,9 +51,9 @@
             position: absolute;
             left: 0;
             right: 0;
-            bottom: -15px;
+            bottom: -30px;
             margin: 0 auto;
-            background: #CF7E1F;
+            background: #e37924;
 	    }
     }
     h4 {
@@ -82,14 +81,17 @@
     .header {
         height: 650px;
         h1 {
-            font-size: 45px;
-            max-width: 600px;
+            font-size: 34px;
+            line-height: 45px;
+
         }
         h4 {
             font-size: 24px;
             max-width: 650px;
         }
-
+        .logo-img {
+            width: 80px;
+        }
     }
 
 }
@@ -100,16 +102,23 @@
 
         height: 500px;
         h1 {
-            font-size: 37px;
-            max-width: 550px;
-            top: 38%;
+            font-size: 30px;
+            line-height: 40px;
+            top: 45%;
+            &:after {
+                bottom: -27px;
+    	    }
         }
         h4 {
             font-size: 22px;
             max-width: 550px;
             top: 60%;
         }
-
+        .logo-img {
+            top: 15px;
+            left: 20px;
+            width: 65px;
+        }
     }
 
 
@@ -125,9 +134,9 @@
             display: none;
         }
         h1 {
-            font-size: 24px;
-            max-width: 500px;
-            top: 35%;
+            font-size: 17px;
+            top: 53%;
+            line-height: 25px;
             &:after {
                 height: 2px;
                 bottom: -12px;
@@ -141,7 +150,7 @@
         .logo-img {
             top: 15px;
             left: 20px;
-            width: 110px;
+            width: 45px;
         }
 
     }
@@ -158,9 +167,9 @@
             display: none;
         }
         h1 {
-            font-size: 23px;
-            max-width: 360px;
-            top: 37%;
+            font-size: 16px;
+            top: 53%;
+            line-height: 20px;
             &:after {
                 height: 2px;
                 bottom: -12px;
@@ -172,7 +181,7 @@
             top: 72%;
         }
         .logo-img {
-            width: 90px;
+            width: 30px;
             top: 15px;
             left: 20px;
         }

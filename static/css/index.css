@@ -40,6 +40,12 @@
 .col_w_full {
   width: 100%; }
 
+.bold-6 {
+  font-weight: 600; }
+
+.bold-7 {
+  font-weight: 700; }
+
 .block {
   padding: 60px 90px;
   font-size: 0; }
@@ -71,11 +77,11 @@
   .block .primary_text {
     line-height: 1.4;
     font-size: 18px;
-    font-family: "ProximaRegular";
+    font-family: "Open Sans";
     color: #2b2b2b; }
   .block .sub_heading {
     color: #000;
-    font-family: "MyriadProSemibold";
+    font-family: "Open Sans";
     font-size: 25px;
     padding: 20px 0;
     line-height: 1.4; }

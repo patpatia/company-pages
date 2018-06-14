@@ -8,7 +8,8 @@
   src: url("/static/fonts/ProximaSansRegular Regular.ttf") format("opentype"); }
 
 .first {
-  padding-top: 45px; }
+  padding-top: 45px;
+  background-color: #fffbf4; }
   .first .content_mobile {
     display: none; }
   .first h2:after {
@@ -17,8 +18,7 @@
     left: 50%;
     transform: translateX(-50%); }
   .first .primary_text {
-    width: 70%;
-    padding-right: 75px; }
+    width: 100%; }
   .first .image {
     width: 30%; }
 
