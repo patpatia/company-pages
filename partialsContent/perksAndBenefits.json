@@ -6,34 +6,29 @@
             "description": "The policy extends to all permanent women employees in GSK, it supports crèche facility for their children"
         },
         {
-            "categoryIcon": "icon-new-family-policy",
-            "title": "New Parent policy",
-            "description": "Post-delivery medical benefits to all WNS Employees"
-        },
-        {
             "categoryIcon": "icon-parking",
-            "title": "Reserved Parking Space  for Pregnant Women",
-            "description": "Post-delivery medical benefits to all WNS Employees"
+            "title": "Special parking for expecting mothers",
+            "description": "The head office has reserved Parking space closer to the lifts for expecting mothers"
         },
         {
             "categoryIcon": "icon-room-&-infrastructure-for-lactating-mothers",
-            "title": "Room & Infrastructure for Lactating Mothers",
-            "description": "Post-delivery medical benefits to all WNS Employees"
+            "title": "Lactating Room for New Mothers",
+            "description": "The head office, has a medical room equipped with all the required facilities to be used as a lactating room for new mothers"
+        },
+        {
+            "categoryIcon": "icon-new-family-policy",
+            "title": "New Family Policy",
+            "description": "A well-defined maternity leave, paternity leave as well as an adoption leave policy for families as well as single parents"
         },
         {
             "categoryIcon": "icon-women-mentorship-program",
             "title": "Women Mentorship Program",
-            "description": "Post-delivery medical benefits to all WNS Employees"
+            "description": "The women mentorship program has senior business leader identified to mentor young women talent focusing on their development needs across the organization"
         },
         {
             "categoryIcon": "icon-flexible-work-arrangements",
-            "title": "Flexible Work arrangements",
-            "description": "Post-delivery medical benefits to all WNS Employees"
-        },
-        {
-            "categoryIcon": "icon-workshop--posh--unconscious-bias",
-            "title": "Workshop : POSH | Unconscious Bias",
-            "description": "Post-delivery medical benefits to all WNS Employees"
+            "title": "Flexible Work arrangement",
+            "description": "Arrangements like the work from home policy support the needs of new parents"
         }
     ]
 }

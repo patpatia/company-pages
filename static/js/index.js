@@ -84,17 +84,6 @@ $(document).ready(function(){
 
 })
 
-$("#readMore").click(function(e) {
-    e.preventDefault();
-    $(this).closest('.content_mobile').find('.primary_text').toggleClass('more');
-    if($(this).closest('.content_mobile').find('.primary_text').hasClass("more")) {
-        $(this).text("Read Less");
-    }
-    else {
-        $(this).text("Read More");
-    }
-})
-
 $(".readMoreinit").click(function(e) {
     e.preventDefault();
     $(this).closest('.content_wrapper').find('.primary_text').toggleClass('more');

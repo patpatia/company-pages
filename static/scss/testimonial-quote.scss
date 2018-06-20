@@ -1,14 +1,13 @@
 @import 'components/_type';
 @import 'components/_colors';
 
-.block {
-    .primary_text {
-        color:  rgba(51, 51, 51, 0.8);
-        font-size: 17px;
-    }
-}
+
 
 .sixth {
+
+    .primary_text {
+        color:  rgba(51, 51, 51, 0.8);
+    }
 
     .heading {
         text-align: center;
@@ -55,6 +54,9 @@
         .sub_heading {
             text-align: center;
             padding-top: 0;
+            .designation {
+                font-weight: normal;
+            }
         }
     }
 }

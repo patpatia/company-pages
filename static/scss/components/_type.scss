@@ -1,16 +1,11 @@
-@import url('https://fonts.googleapis.com/css?family=Comfortaa|Droid+Sans|Open+Sans:400,600,700');
-@font-face {
-    font-family: "MyriadProSemibold";
-    src: url("/static/fonts/MyriadPro-Semibold.otf") format("opentype");
-}
-@font-face {
-    font-family: "ProximaRegular";
-    src: url("/static/fonts/ProximaSansRegular Regular.ttf") format("opentype");
-}
+@import url('https://fonts.googleapis.com/css?family=Lato|PT+Sans');
+
 $myriadPro : "MyriadProSemibold";
 $proxiReg : "ProximaRegular";
 $openSans : "Open Sans";
 $primaryFont : "Droid Sans";
+$ptSans: "PT Sans";
+$lato: "Lato";
 $perksHeadingSemiBold : "Open Sans - Semibold";
 $blockHeading: 30px;
 $blockHeadingMobile: 26px;
@@ -18,12 +13,12 @@ $blockHeadingMobileSmall: 21px;
 $blockHeadingMobileExtraSmall: 17px;
 $navLink : 16px;
 $content : 15px;
-$perksHeadingSize: 17px;
-$perksContent : 13px;
+$perksHeadingSize: 18px;
+$perksContent : 14px;
 $slickDotsSize : 13px;
 $slickDotsSizeMobile : 30px;
 $buttonSize : 14px;
-$primaryTextSize: 18px;
+$primaryTextSize: 17px;
 $primaryTextLineHeight: 1.4;
 $primaryTextSizeMobile: 16px;
 $primaryTextLineHeightMobile: 1.4;

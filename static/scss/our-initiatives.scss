@@ -31,7 +31,7 @@
         padding: 50px 0;
         margin-top: 0;
         border-bottom: 1px solid #e2e2e2;
-        &:nth-child(4) {
+        &:nth-child(3) {
             border-bottom:0;
             padding-bottom: 0;
         }
@@ -55,8 +55,7 @@
         .readMoreinit {
             position: absolute;
             bottom: -25px;
-            left: 50%;
-            transform: translate(-50%);
+            left: 0;
             font-size: 14px;
             color: #da491c;
             cursor: pointer;
@@ -116,15 +115,7 @@
             .sub_heading {
                 padding: 0 0 20px 0;
             }
-            .readMoreinit {
-                position: absolute;
-                bottom: 15px;
-                left: 50%;
-                transform: translate(-50%);
-                font-size: 14px;
-                color: #da491c;
-                cursor: pointer;
-            }
+            
         }
     }
 }

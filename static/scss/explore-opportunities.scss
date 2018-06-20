@@ -24,7 +24,8 @@
         max-width: 75%;
     }
     .content {
-        width: 100%;
+        width: 80%;
+        margin: 0 auto;
         .row {
             font-size: 0;
             width: 80%;
@@ -79,18 +80,19 @@
                 transform: translate(-50%, -50%);
                 &:before {
                     color: #fff;
+                    font-size: 40px;
                 }
             }
         }
         .primary_text {
-            font-family: $myriadPro;
+            font-family: $ptSans;
             font-size: 17px;
             color: $primaryTextColor;
             margin: 20px 0;
             line-height: 1.4;
         }
         .secondary_text {
-            font-family: $proxiReg;
+            font-family: $lato;
             font-size: 13px;
             color: $perksTextColor;
             p {

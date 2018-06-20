@@ -56,9 +56,10 @@
     font-size: 0;
 
     h2 {
-        color: #000;
-        font-family: $myriadPro;
+        color: #2b2b2b;
+        font-family: $ptSans;
         font-size: $blockHeading;
+        font-weight: bold;
         padding: 0 0 20px 0;
         position: relative;
         display: inline-block;
@@ -90,13 +91,14 @@
     .primary_text {
         line-height: $primaryTextLineHeight;
         font-size: $primaryTextSize;
-        font-family: $openSans;
+        font-family: $lato;
         color: $primaryTextColor;
     }
 
     .sub_heading {
-        color: #000;
-        font-family: $openSans;
+        color: #2b2b2b;
+        font-family: $ptSans;
+        font-weight: bold;
         font-size: 25px;
         padding: 20px 0;
         line-height: 1.4;

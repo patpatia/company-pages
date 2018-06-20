@@ -20,8 +20,8 @@
     }
     .logo-img {
         position: absolute;
-        top: 25px;
-        left: 30px;
+        top: 4%;
+        right: 3%;
         width: 95px;
     }
 
@@ -35,14 +35,14 @@
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%,-40%);
+        transform: translate(-50%,-50%);
         text-align: center;
         width: 80%;
-        font-size: 38px;
+        font-size: 42px;
         color: #fff;
-        font-family: $openSans;
+        font-family: $ptSans;
         font-weight: bold;
-        line-height: 50px;
+        line-height: 60px;
         &:after {
             content: '';
             display: block;
@@ -51,24 +51,10 @@
             position: absolute;
             left: 0;
             right: 0;
-            bottom: -30px;
+            bottom: -70px;
             margin: 0 auto;
             background: #e37924;
 	    }
-    }
-    h4 {
-        position: absolute;
-        top: 60%;
-        left: 50%;
-        transform: translate(-50%,-50%);
-        text-align: center;
-        font-size: 24px;
-        color: #fff;
-        max-width: 850px;
-        font-family: $proxiReg;
-        font-weight: 400;
-        line-height: 1.4;
-        padding: 0 10px;
     }
 
     .bg-img-mobile {
@@ -76,55 +62,37 @@
     }
 }
 
-@media (min-width: 768px) and (max-width: 900px) {
-
+@media (min-width: 769px) and (max-width: 1024px) {
     .header {
-        height: 650px;
         h1 {
             font-size: 34px;
-            line-height: 45px;
-
-        }
-        h4 {
-            font-size: 24px;
-            max-width: 650px;
+            line-height: 55px;
+            &:after {
+                bottom: -60px;
+    	    }
         }
         .logo-img {
             width: 80px;
         }
     }
-
 }
 
-@media (min-width: 481px) and (max-width: 767px) {
-
+@media (min-width: 600px) and (max-width: 768px) {
     .header {
-
-        height: 500px;
         h1 {
-            font-size: 30px;
+            font-size: 27px;
             line-height: 40px;
-            top: 45%;
             &:after {
-                bottom: -27px;
+                bottom: -60px;
     	    }
         }
-        h4 {
-            font-size: 22px;
-            max-width: 550px;
-            top: 60%;
-        }
         .logo-img {
-            top: 15px;
-            left: 20px;
             width: 65px;
         }
     }
-
-
 }
 
-@media (min-width: 361px) and (max-width: 480px) {
+@media (min-width: 414px) and (max-width: 480px) {
 
     .header {
         .bg-img-mobile {
@@ -135,21 +103,13 @@
         }
         h1 {
             font-size: 17px;
-            top: 53%;
-            line-height: 25px;
+            line-height: 30px;
             &:after {
+                bottom: -25px;
                 height: 2px;
-                bottom: -12px;
     	    }
         }
-        h4 {
-            font-size: 15px;
-            max-width: 400px;
-            top: 70%;
-        }
         .logo-img {
-            top: 15px;
-            left: 20px;
             width: 45px;
         }
 
@@ -157,7 +117,16 @@
 
 }
 
-@media (min-width: 320px) and (max-width: 360px) {
+@media (min-width: 320px) and (max-width: 480px) {
+    .header {
+        .overlay {
+            background-color: $bgOverlayMobile;
+        }
+    }
+
+}
+
+@media (min-width: 320px) and (max-width: 375px) {
 
     .header {
         .bg-img-mobile {
@@ -167,23 +136,15 @@
             display: none;
         }
         h1 {
-            font-size: 16px;
-            top: 53%;
-            line-height: 20px;
+            font-size: 14px;
+            line-height: 23px;
             &:after {
+                bottom: -16px;
                 height: 2px;
-                bottom: -12px;
     	    }
         }
-        h4 {
-            font-size: 14px;
-            max-width: 320px;
-            top: 72%;
-        }
         .logo-img {
-            width: 30px;
-            top: 15px;
-            left: 20px;
+            width: 35px;
         }
     }
 
