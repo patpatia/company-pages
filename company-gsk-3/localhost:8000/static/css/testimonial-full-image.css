@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css?family=Lato|PT+Sans");
+.ninth {
+  font-weight: 300;
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 0; }
+  .ninth .slick-prev:before,
+  .ninth .slick-next:before {
+    font-size: 60px; }
+  .ninth .slick-prev {
+    left: 40px; }
+  .ninth .slick-next {
+    right: 40px; }
+  .ninth .heading {
+    text-align: center; }
+  .ninth h2:after {
+    width: 80px;
+    height: 2px;
+    left: 50%;
+    transform: translateX(-50%); }

@@ -1,6 +1,19 @@
 @import 'components/_type';
 @import 'components/_colors';
 
+
+.read_more {
+    position: absolute;
+    bottom: -25px;
+    left: 0;
+    font-size: 14px;
+    color: #000;
+    cursor: pointer;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
 .main-wrapper{
     width: 100%;
     max-width: 1440px;
@@ -10,7 +23,7 @@
 .divider {
     border: 0;
     height: 0;
-    border-bottom: 1px solid $borderColor;
+    border-bottom: 1px solid #f2f1f1;
     margin: 0;
 }
 
@@ -52,9 +65,10 @@
 }
 
 .block {
-    padding: 60px 90px;
+    padding: 50px 90px;
     font-size: 0;
-
+    line-height: 1.6;
+    padding-bottom: 62px;
     h2 {
         color: #2b2b2b;
         font-family: $ptSans;
@@ -170,7 +184,8 @@
 @media (min-width: 320px) and (max-width: 480px) {
     .block {
         padding-top: 45px;
-        padding-bottom: 45px;
+        padding-bottom: 57px;
+
     }
 }
 
@@ -206,4 +221,15 @@
 
 .ui-tabs-nav {
     display:none;
+}
+
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .block-heading {
+        text-align: center;
+    }
+    .read_more_about {
+        left: auto;
+        right: 0;
+    }
 }

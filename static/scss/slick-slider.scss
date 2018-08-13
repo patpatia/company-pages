@@ -3,10 +3,10 @@
 
 .slick-dots li {
     margin: 0;
-    width: 25px;
+    width: 30px;
     button:before {
         font-family: 'fontello';
-        font-size: 50px;
+        font-size: 60px;
     }
 }
 
@@ -40,11 +40,11 @@
         text-align: center;
     }
     .slick-prev {
-        background: url(/static/images/left-arrow.png);
+        background: url(../../../static/images/left-arrow.png);
         background-repeat: no-repeat;
     }
     .slick-next {
-        background: url(/static/images/right-arrow.png);
+        background: url(../../../static/images/right-arrow.png);
         background-repeat: no-repeat;
     }
     .slick-prev, .slick-next {

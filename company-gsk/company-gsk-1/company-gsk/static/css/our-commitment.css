@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css?family=Lato|PT+Sans");
+.eigth {
+  padding-top: 45px;
+  background-color: #f8f8f8; }
+  .eigth .content_mobile {
+    display: none; }
+  .eigth h2:after {
+    width: 80px;
+    height: 2px;
+    left: 50%;
+    transform: translateX(-50%); }
+  .eigth .primary_text {
+    width: 70%;
+    padding-left: 75px;
+    vertical-align: middle;
+    display: inline-block; }
+  .eigth .image {
+    width: 30%;
+    vertical-align: middle;
+    display: inline-block; }
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .eigth h2:after {
+    width: 50px; }
+  .eigth .heading {
+    margin-left: 0; }
+  .eigth .content_mobile {
+    display: block;
+    position: relative; }
+  .eigth .content {
+    display: none; }
+  .eigth .primary_text {
+    width: 100%;
+    padding: 0;
+    height: 200px;
+    overflow: hidden;
+    position: relative; }
+  .eigth .image {
+    width: 100%;
+    margin-bottom: 50px; } }

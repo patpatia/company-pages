@@ -1,7 +1,11 @@
-@import url("https://fonts.googleapis.com/css?family=Lato|PT+Sans");
+.block .content {
+  margin-top: 35px; }
+
 .first {
-  padding-top: 45px;
-  background-color: #fffbf4; }
+  background-color: #fffbf4;
+  padding-bottom: 100px; }
+  .first .read_more {
+    bottom: -45px; }
   .first .content_wrapper {
     position: relative; }
   .first .content_mobile {
@@ -14,10 +18,10 @@
   .first .primary_text {
     width: 100%;
     padding: 0;
-    height: 150px;
+    height: 90px;
     overflow: hidden;
     position: relative;
-    font-size: 20px; }
+    font-size: 17px; }
   .first .image {
     width: 30%; }
 
@@ -25,20 +29,18 @@
   height: auto !important;
   overflow: auto !important; }
 
-.read_more {
-  position: absolute;
-  bottom: -25px;
-  left: 0;
-  font-size: 16px;
-  color: #da491c;
-  cursor: pointer; }
-
 @media (min-width: 320px) and (max-width: 767px) {
   .first .primary_text {
     width: 100%;
     font-size: 17px; }
   .first h2:after {
     width: 50px; } }
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .first .primary_text {
+    width: 100%;
+    font-size: 17px;
+    height: 225px; } }
 
 @media (min-width: 320px) and (max-width: 1023px) {
   .first .content_mobile {

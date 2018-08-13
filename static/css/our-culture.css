@@ -1,44 +1,28 @@
-@import url("https://fonts.googleapis.com/css?family=Lato|PT+Sans");
-.second .content_mobile {
-  display: none; }
+.block .image img {
+  height: unset; }
 
-.second h2:after {
-  width: 80px;
-  height: 2px;
-  left: 50%;
-  transform: translateX(-50%); }
-
-.second .heading {
-  text-align: center; }
-
-.second .content {
-  height: 650px;
-  max-width: 1050px;
-  margin: 50px auto 0 auto; }
-
-.second .pad_left {
-  padding-left: 5px; }
-
-.second .pad_right {
-  padding-right: 5px; }
-
-.second .pad_bottom {
-  padding-bottom: 5px; }
-
-.second .pad_top {
-  padding-top: 5px; }
-
-@media (min-width: 768px) and (max-width: 899px) {
+.second {
+  padding-bottom: 62px; }
+  .second .content_mobile {
+    display: none; }
+  .second h2:after {
+    width: 80px;
+    height: 2px;
+    left: 50%;
+    transform: translateX(-50%); }
+  .second .heading {
+    text-align: center; }
   .second .content {
-    height: 400px; } }
-
-@media (min-width: 900px) and (max-width: 1023px) {
-  .second .content {
-    height: 500px; } }
-
-@media (min-width: 1024px) and (max-width: 1279px) {
-  .second .content {
-    height: 550px; } }
+    max-width: 1050px;
+    margin: 50px auto 0 auto; }
+  .second .pad_left {
+    padding-left: 5px; }
+  .second .pad_right {
+    padding-right: 5px; }
+  .second .pad_bottom {
+    padding-bottom: 5px; }
+  .second .pad_top {
+    padding-top: 5px; }
 
 @media (min-width: 320px) and (max-width: 767px) {
   .second h2:after {

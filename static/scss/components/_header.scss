@@ -22,7 +22,7 @@
         position: absolute;
         top: 4%;
         right: 3%;
-        width: 95px;
+        width: auto;
     }
 
     img {
@@ -33,12 +33,12 @@
 
     h1 {
         position: absolute;
-        top: 50%;
+        top: 60%;
         left: 50%;
         transform: translate(-50%,-50%);
         text-align: center;
         width: 80%;
-        font-size: 42px;
+        font-size: 38px;
         color: #fff;
         font-family: $ptSans;
         font-weight: bold;
@@ -46,14 +46,14 @@
         &:after {
             content: '';
             display: block;
-            width: 25%;
+            width: 16%;
             height: 3px;
             position: absolute;
             left: 0;
             right: 0;
             bottom: -70px;
             margin: 0 auto;
-            background: #e37924;
+            background: #da491c;
 	    }
     }
 
@@ -62,18 +62,35 @@
     }
 }
 
+@media (min-width: 1366px) and (max-width: 1439px) {
+    .header {
+        h1 {
+            font-size: 40px;
+            line-height: 70px;
+        }
+    }
+}
+
+@media (min-width: 1440px) {
+    .header {
+        h1 {
+            font-size: 42px;
+            line-height: 70px;
+        }
+    }
+}
+
 @media (min-width: 769px) and (max-width: 1024px) {
     .header {
         h1 {
             font-size: 34px;
             line-height: 55px;
+            top: 63%;
             &:after {
-                bottom: -60px;
+                bottom: -30px;
     	    }
         }
-        .logo-img {
-            width: 80px;
-        }
+
     }
 }
 
@@ -82,17 +99,16 @@
         h1 {
             font-size: 27px;
             line-height: 40px;
+            top: 63%;
             &:after {
-                bottom: -60px;
+                bottom: -30px;
     	    }
         }
-        .logo-img {
-            width: 65px;
-        }
+
     }
 }
 
-@media (min-width: 414px) and (max-width: 480px) {
+@media (min-width: 411px) and (max-width: 480px) {
 
     .header {
         .bg-img-mobile {
@@ -104,15 +120,12 @@
         h1 {
             font-size: 17px;
             line-height: 30px;
+            top: 66%;
             &:after {
-                bottom: -25px;
+                bottom: -20px;
                 height: 2px;
     	    }
         }
-        .logo-img {
-            width: 45px;
-        }
-
     }
 
 }
@@ -121,6 +134,9 @@
     .header {
         .overlay {
             background-color: $bgOverlayMobile;
+        }
+        .logo-img {
+            width: 100px;
         }
     }
 
@@ -139,13 +155,11 @@
             font-size: 14px;
             line-height: 23px;
             &:after {
-                bottom: -16px;
+                bottom: -10px;
                 height: 2px;
     	    }
         }
-        .logo-img {
-            width: 35px;
-        }
+
     }
 
 }

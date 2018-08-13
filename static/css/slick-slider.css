@@ -1,10 +1,9 @@
-@import url("https://fonts.googleapis.com/css?family=Lato|PT+Sans");
 .slick-dots li {
   margin: 0;
-  width: 25px; }
+  width: 30px; }
   .slick-dots li button:before {
     font-family: 'fontello';
-    font-size: 50px; }
+    font-size: 60px; }
 
 .slick-slide {
   outline: none; }
@@ -22,17 +21,17 @@
 
 @media (min-width: 320px) and (max-width: 767px) {
   .slick-dots li button:before {
-    font-size: 30px; } }
+    font-size: 55px; } }
 
 .sixth .slick-dots {
   text-align: center; }
 
 .sixth .slick-prev {
-  background: url(/static/images/left-arrow.png);
+  background: url(../../../static/images/left-arrow.png);
   background-repeat: no-repeat; }
 
 .sixth .slick-next {
-  background: url(/static/images/right-arrow.png);
+  background: url(../../../static/images/right-arrow.png);
   background-repeat: no-repeat; }
 
 .sixth .slick-prev, .sixth .slick-next {

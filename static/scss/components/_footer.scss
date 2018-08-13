@@ -70,7 +70,7 @@
             display: inline-block;
             cursor: pointer;
                 &:not(:last-child) {
-                    margin-right: 20px;
+                    margin-right: 0px;
                 }
                 a {
                     line-height: 60px;
@@ -107,7 +107,7 @@
         .ico {
             //font-size: 10px;
             &:not(:last-child) {
-                margin-right: 10px;
+                margin-right: -6px;
             }
             a {
                 line-height: 40px;

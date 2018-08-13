@@ -13,8 +13,11 @@
     }
 
     background-color: $bgColor;
-
+    .heading {
+        text-align: center;
+    }
     h2 {
+
         &:after {
 	    	width:80px;
 	    	height:2px;
@@ -42,24 +45,17 @@
         vertical-align: middle;
         display: inline-block;
         position: relative;
-
+        top: -14px;
         &:nth-child(3) {
             .image {
                 text-align: right;
             }
         }
         .primary_text {
-            height: 90px;
+            height: 60px;
             overflow: hidden;
         }
-        .readMoreinit {
-            position: absolute;
-            bottom: -25px;
-            left: 0;
-            font-size: 14px;
-            color: #da491c;
-            cursor: pointer;
-        }
+
     }
 
     .image {
@@ -85,6 +81,16 @@
     }
 }
 
+@media (min-width: 320px) and (max-width: 768px) {
+    .third {
+        .content_wrapper {
+            .primary_text {
+                height: 85px;
+            }
+        }
+    }
+}
+
 @media (min-width: 320px) and (max-width: 767px) {
 
     .third {
@@ -99,8 +105,10 @@
             display: block;
             padding: 50px 0;
             margin-top: 0;
+            padding-bottom: 0;
             &:not(:last-child) {
                 border-bottom: 1px solid #e2e2e2;
+                padding-bottom: 50px;
             }
         }
         .content {
@@ -114,8 +122,36 @@
             padding-bottom: 40px;
             .sub_heading {
                 padding: 0 0 20px 0;
+                text-align: center;
             }
-            
         }
     }
+}
+
+@media (min-width: 1279px) {
+    .third {
+        .readLessFirst {
+            bottom: -28px;
+        }
+    }
+}
+
+@media (min-width: 1367px) {
+    .third {
+        .content_wrapper {
+            .primary_text {
+                height: 50px;
+            }
+        }
+        .readMoreFirst {
+            bottom: -18px;
+        }
+        .readMoreSecond {
+            bottom: -40px;
+        }
+        .readLessFirst {
+            bottom: -38px;
+        }
+    }
+
 }

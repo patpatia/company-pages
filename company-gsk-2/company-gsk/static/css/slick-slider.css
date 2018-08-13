@@ -28,11 +28,11 @@
   text-align: center; }
 
 .sixth .slick-prev {
-  background: url(/static/images/left-arrow.png);
+  background: url(static/images/left-arrow.png);
   background-repeat: no-repeat; }
 
 .sixth .slick-next {
-  background: url(/static/images/right-arrow.png);
+  background: url(static/images/right-arrow.png);
   background-repeat: no-repeat; }
 
 .sixth .slick-prev, .sixth .slick-next {

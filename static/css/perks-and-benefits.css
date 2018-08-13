@@ -1,16 +1,25 @@
-@import url("https://fonts.googleapis.com/css?family=Lato|PT+Sans");
 .fourth {
-  position: relative; }
+  position: relative;
+  padding-bottom: 90px;
+  padding-top: 52px; }
   .fourth .slider_fourth_mobile {
     display: none; }
-  .fourth .image {
+  .fourth .image-above {
     position: absolute;
     top: 0;
     left: 0;
-    width: 25%;
-    height: 25%;
-    z-index: -1; }
-    .fourth .image img {
+    width: 180px;
+    z-index: 0; }
+    .fourth .image-above img {
+      max-width: 100%;
+      width: auto; }
+  .fourth .image-below {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 180px;
+    z-index: 0; }
+    .fourth .image-below img {
       max-width: 100%;
       width: auto; }
   .fourth .slider_fourth {
@@ -23,6 +32,8 @@
   .fourth .content_wrapper .primary_text {
     margin-top: 40px;
     padding-right: 75px; }
+  .fourth .perk-heading {
+    padding-top: 0 !important; }
   .fourth .col:nth-child(odd) {
     padding-right: 20px; }
   .fourth .col:nth-child(-n+2) {
@@ -30,12 +41,14 @@
   .fourth .col:nth-child(n+3) {
     padding-bottom: 20px; }
   .fourth .col .heading {
-    font-family: "PT Sans";
-    font-size: 18px;
+    font-family: "Droid Sans", sans-serif;
+    font-size: 16px;
     padding: 15px 0;
-    color: #333; }
+    color: #333;
+    line-height: 1.3;
+    text-transform: uppercase; }
   .fourth .col .text {
-    font-family: "Lato";
+    font-family: "Droid Sans", sans-serif;
     font-size: 14px;
     line-height: 1.4;
     color: #999; }
@@ -44,10 +57,11 @@
     background-color: #fff;
     margin: 0;
     padding: 0;
-    font-size: 30px; }
+    font-size: 40px;
+    margin-left: -4px; }
   .fourth .slick-dots {
     text-align: left;
-    left: -5px;
+    left: -3px;
     bottom: -30px; }
   .fourth .slick-arrow {
     display: none !important; }

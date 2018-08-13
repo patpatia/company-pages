@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css?family=Lato|PT+Sans");
+.fourth {
+  position: relative; }
+  .fourth .slider_fourth_mobile {
+    display: none; }
+  .fourth .image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 25%;
+    height: 25%;
+    z-index: -1; }
+    .fourth .image img {
+      max-width: 100%;
+      width: auto; }
+  .fourth .slider_fourth {
+    display: inline-block; }
+  .fourth h2:after {
+    width: 80px;
+    height: 2px;
+    left: 50%;
+    transform: translateX(-50%); }
+  .fourth .content_wrapper .primary_text {
+    margin-top: 40px;
+    padding-right: 75px; }
+  .fourth .col:nth-child(odd) {
+    padding-right: 20px; }
+  .fourth .col:nth-child(-n+2) {
+    padding-bottom: 40px; }
+  .fourth .col:nth-child(n+3) {
+    padding-bottom: 20px; }
+  .fourth .col .heading {
+    font-family: "PT Sans";
+    font-size: 18px;
+    padding: 15px 0;
+    color: #333; }
+  .fourth .col .text {
+    font-family: "Lato";
+    font-size: 14px;
+    line-height: 1.4;
+    color: #999; }
+  .fourth .col .f-icon:before {
+    color: #da491c;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+    font-size: 30px; }
+  .fourth .slick-dots {
+    text-align: left;
+    left: -5px;
+    bottom: -30px; }
+  .fourth .slick-arrow {
+    display: none !important; }
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .fourth h2:after {
+    width: 50px; }
+  .fourth .col_container {
+    padding-bottom: 0 !important; }
+  .fourth .content_wrapper {
+    width: 100%; }
+    .fourth .content_wrapper .primary_text {
+      padding: 0;
+      margin: 40px 0; }
+  .fourth .slider_fourth_mobile {
+    display: block; }
+  .fourth .slider_fourth {
+    display: none; }
+  .fourth .slick-dots {
+    text-align: center; }
+  .fourth .col_container .col {
+    padding-right: 15px; } }

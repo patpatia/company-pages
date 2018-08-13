@@ -1,25 +1,55 @@
 @import 'components/_type';
 @import 'components/_colors';
 
-
 .ninth {
     font-weight: 300;
     padding-left: 0;
     padding-right: 0;
-    padding-bottom: 0;
+    padding-bottom: 80px;
+    .slick-dots {
+        bottom: -16px;
+    }
+    .primary_text {
+        font-size: 15px;
+        color: #212121;
+    }
+    .slick-list {
+        padding: 0px;
+    }
+
+    .center_slider_best {
+        padding: 60px 0;
+
+    }
 
     .slick-prev:before,
     .slick-next:before{
         font-size: 60px;
+
+        color: #F2A791;
+        opacity: 1;
     }
 
     .slick-prev{
-        left: 40px;
+        left: 20px;
+        z-index: 99;
+        width: 50px;
+        height: 60px;
+        &:before {
+            font-family: 'fontello';
+            content: '\e806'
 
+        }
     }
     .slick-next{
-        right: 40px;
-
+        right: 20px;
+        z-index: 99;
+        width: 50px;
+        height: 60px;
+        &:before {
+            font-family: 'fontello';
+            content: '\e817'
+        }
     }
 
     .heading {
@@ -33,5 +63,84 @@
 	    	transform: translateX(-50%);
 	    }
     }
+    .l_slide_blk {
+        float: left;
+        width: 40%;
+        height: 100%;
+        img {
+            width: 100%;
+        }
+    }
+    .r_slide_blk {
+        float: right;
+        width: 60%;
+        height: 100%;
+        overflow-y: auto;
+        padding: 20px 30px;
+        background-color:  rgba(255, 251, 244, 0.9);
+        padding-right: 65px;
+        .be_heading {
+            font-size: 20px;
+            padding: 20px 0;
+            font-weight: bold;
+        }
+        .be_subheading {
+            font-weight: bold;
+        }
+    }
+    .slides-wrapper {
+        width: 100%;
+        height: 600px;
+    }
 
+}
+
+@media (min-width: 900px) and (max-width: 1024px) {
+    .ninth {
+        .slides-wrapper {
+            height: 500px;
+        }
+        .l_slide_blk {
+            img {
+                height: 100%;
+            }
+        }
+    }
+}
+
+@media (min-width: 600px) and (max-width: 768px) {
+    .ninth {
+        .slides-wrapper {
+            height: 400px;
+        }
+        .l_slide_blk {
+            img {
+                height: 100%;
+            }
+        }
+    }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .ninth {
+        .slick-next {
+        right: 15px;
+        }
+        .slick-prev {
+            left: 0px;
+        }
+        .slides-wrapper {
+            height: 500px;
+        }
+        .l_slide_blk {
+            width: 100%;
+            height: 100%;
+            img {
+                height: 100%;
+            }
+        }
+        .r_slide_blk {
+            width: 100%;
+        }
+    }
 }

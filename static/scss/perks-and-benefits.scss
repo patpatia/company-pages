@@ -3,16 +3,28 @@
 
 .fourth {
     position: relative;
+    padding-bottom: 90px;
+    padding-top: 52px;
     .slider_fourth_mobile {
         display: none;
     }
-    .image {
+    .image-above {
         position: absolute;
         top: 0;
         left: 0;
-        width: 25%;
-        height: 25%;
-        z-index: -1;
+        width: 180px;
+        z-index: 0;
+        img {
+            max-width: 100%;
+            width: auto;
+        }
+    }
+    .image-below {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 180px;
+        z-index: 0;
         img {
             max-width: 100%;
             width: auto;
@@ -36,6 +48,10 @@
         }
     }
 
+    .perk-heading {
+        padding-top: 0 !important;
+    }
+
     .col {
         &:nth-child(odd) {
             padding-right: 20px;
@@ -54,6 +70,8 @@
             font-size: $perksHeadingSize;
             padding: 15px 0;
             color: $secondaryText;
+            line-height: 1.3;
+            text-transform: uppercase;
         }
         .text {
             font-family: $lato;
@@ -67,13 +85,14 @@
             background-color: #fff;
             margin: 0;
             padding: 0;
-            font-size: 30px;
+            font-size: 40px;
+            margin-left: -4px;
         }
     }
 
     .slick-dots {
         text-align: left;
-        left: -5px;
+        left: -3px;
         bottom: -30px;
     }
     .slick-arrow {

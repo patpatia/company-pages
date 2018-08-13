@@ -1,13 +1,16 @@
 @import 'components/_type';
 @import 'components/_colors';
 
-
+.block .image img {
+    height: unset;
+}
 
 .second {
+    padding-bottom: 62px;
     .content_mobile {
         display: none;
     }
-    
+
     h2 {
         &:after {
 	    	width:80px;
@@ -21,7 +24,6 @@
     }
 
     .content {
-        height: 650px;
         max-width: 1050px;
         margin: 50px auto 0 auto;
         // margin-top: 50px;
@@ -41,30 +43,6 @@
 
     .pad_top {
         padding-top: 5px;
-    }
-}
-
-@media (min-width: 768px) and (max-width: 899px) {
-    .second {
-        .content {
-            height: 400px;
-        }
-    }
-}
-
-@media (min-width: 900px) and (max-width: 1023px) {
-    .second {
-        .content {
-            height: 500px;
-        }
-    }
-}
-
-@media (min-width: 1024px) and (max-width: 1279px) {
-    .second {
-        .content {
-            height: 550px;
-        }
     }
 }
 

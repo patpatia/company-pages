@@ -11,15 +11,7 @@ $(document).ready(function(){
             }
         },
         activate:function(event,ui) {
-
             window.scrollTo(0,tabOffset["top"]);
-            // var tabId = ui.newTab.find("a").attr("href");
-            // // $(""+tabId+" .ui-tabs-active").removeClass(".ui-state-active");
-            // // setTimeout(function() {
-            // //      $(""+tabId+" .ui-tabs-active").addClass(".ui-state-active");
-            // // }, 2000);
-
-
         }
     });
 
@@ -51,6 +43,14 @@ $(document).ready(function(){
               }
             }
         ]
+    });
+
+    $('.center_slider_best').slick({
+        centerMode: false,
+        centerPadding: '0',
+        slidesToShow: 1,
+        dots:true,
+        arrows: true
     });
 
     $(".youtube_ico").click(function() {
@@ -89,9 +89,13 @@ $(".readMoreinit").click(function(e) {
     $(this).closest('.content_wrapper').find('.primary_text').toggleClass('more');
     if($(this).closest('.content_wrapper').find('.primary_text').hasClass("more")) {
         $(this).text("Read Less");
+        if($(this).hasClass("readMoreFirst")) {
+            $(this).addClass("readLessFirst")
+        }
     }
     else {
         $(this).text("Read More");
+        $(this).removeClass("readLessFirst")
     }
 })
 

@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css?family=Lato|PT+Sans");
+.first {
+  padding-top: 45px;
+  background-color: #fffbf4; }
+  .first .content_wrapper {
+    position: relative; }
+  .first .content_mobile {
+    display: none; }
+  .first h2:after {
+    width: 80px;
+    height: 2px;
+    left: 50%;
+    transform: translateX(-50%); }
+  .first .primary_text {
+    width: 100%;
+    padding: 0;
+    height: 150px;
+    overflow: hidden;
+    position: relative;
+    font-size: 20px; }
+  .first .image {
+    width: 30%; }
+
+.more {
+  height: auto !important;
+  overflow: auto !important; }
+
+.read_more {
+  position: absolute;
+  bottom: -25px;
+  left: 0;
+  font-size: 16px;
+  color: #da491c;
+  cursor: pointer; }
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .first .primary_text {
+    width: 100%;
+    font-size: 17px; }
+  .first h2:after {
+    width: 50px; } }
+
+@media (min-width: 320px) and (max-width: 1023px) {
+  .first .content_mobile {
+    display: block;
+    position: relative; }
+  .first .content {
+    display: none; }
+  .first .image {
+    width: 100%;
+    margin-bottom: 50px; } }

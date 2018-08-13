@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css?family=Lato|PT+Sans");
+.nav-tabs {
+  width: 100%;
+  height: auto; }
+
+.ui-widget.ui-widget-content {
+  border: 0;
+  padding: 0; }
+
+.ui-corner-all, .ui-corner-top, .ui-corner-right, .ui-corner-tr {
+  border-radius: 0; }
+
+.ui-widget-content {
+  background-color: #fff; }
+
+.ui-tabs .ui-tabs-nav .ui-tabs-anchor {
+  position: relative; }
+  .ui-tabs .ui-tabs-nav .ui-tabs-anchor:last-child {
+    float: none; }
+
+.ui-widget-header {
+  border: 0;
+  background: #fff;
+  color: #2b2b2b;
+  font-family: "Droid Sans";
+  font-size: 16px;
+  padding: 0 125px; }
+
+.ui-tabs .ui-tabs-nav li {
+  margin: 0;
+  border: 0; }
+
+.ui-tabs .ui-tabs-nav li.ui-tabs-active {
+  margin: 0;
+  padding: 0; }
+
+.ui-state-default {
+  background: #fff !important;
+  border: 0;
+  border-radius: 0;
+  margin: 0;
+  border-left: 0;
+  width: 25%;
+  outline: 0; }
+  .ui-state-default a {
+    padding: 20px 0;
+    display: inline-block;
+    text-align: left;
+    color: #313131 !important; }
+    .ui-state-default a:focus {
+      outline: 0; }
+  .ui-state-default:last-child {
+    text-align: center; }
+
+.ui-state-active {
+  background: #fff !important; }
+  .ui-state-active a {
+    color: #000 !important;
+    font-weight: 600; }
+    .ui-state-active a:after {
+      content: '';
+      display: block;
+      width: 75%;
+      height: 2px;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0px;
+      background: #da491c; }
+
+.ui-tabs .ui-tabs-panel {
+  padding: 0; }
+
+.nav_container {
+  overflow-x: auto;
+  overflow-y: hidden;
+  width: 100%;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2); }
+
+@media (min-width: 320px) and (max-width: 900px) {
+  .ui-widget-header {
+    padding: 0 20px; } }
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .ui-widget-header {
+    width: 700px;
+    font-size: 15px; } }
+
+@media (min-width: 361px) and (max-width: 480px) {
+  .ui-widget-header {
+    width: 650px;
+    font-size: 14px; } }
+
+@media (min-width: 320px) and (max-width: 360px) {
+  .ui-widget-header {
+    width: 600px;
+    font-size: 13px; } }

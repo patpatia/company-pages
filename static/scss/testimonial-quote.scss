@@ -4,9 +4,11 @@
 
 
 .sixth {
+    padding-bottom: 82px;
 
     .primary_text {
         color:  rgba(51, 51, 51, 0.8);
+        text-align: center;
     }
 
     .heading {
@@ -56,6 +58,7 @@
             padding-top: 0;
             .designation {
                 font-weight: normal;
+                font-size: 22px;
             }
         }
     }
@@ -85,9 +88,7 @@
                 height: 102px;
             }
             .content_wrapper {
-
                 padding-top: 85px;
-
             }
         }
     }
@@ -154,4 +155,8 @@
         }
     }
 
+}
+
+.slick-dotted.slick-slider {
+    margin-bottom: 0;
 }
